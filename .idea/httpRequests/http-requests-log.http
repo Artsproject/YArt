@@ -1,0 +1,8 @@
+GET http://localhost:8081/useradd.do?nickname=martin&password=123
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-18T092649.200.json
+
+###
+
