@@ -13,5 +13,13 @@
         <module name="Art_Service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Art_Common" target="1.8" />
+      <module name="Art_Controller" target="1.8" />
+      <module name="Art_Domain" target="1.8" />
+      <module name="Art_Mapper" target="1.8" />
+      <module name="Art_Service" target="1.8" />
+      <module name="YArt" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
