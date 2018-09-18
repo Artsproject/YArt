@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qfedu.mapper.ResumeMapper">
+  <resultMap id="BaseResultMap" type="com.qfedu.domain.Resume">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="artid" jdbcType="INTEGER" property="artid" />
+    <result column="createtime" jdbcType="DATE" property="createtime" />
+    <result column="experience" jdbcType="VARCHAR" property="experience" />
+    <result column="award" jdbcType="VARCHAR" property="award" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.qfedu.domain.Resume">
+    <result column="resume" jdbcType="LONGVARCHAR" property="resume" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, artid, createtime, experience, award
+  </sql>
+  <sql id="Blob_Column_List">
+    resume
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from t_resume
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_resume
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.qfedu.domain.Resume">
+    insert into t_resume (id, artid, createtime, 
+      experience, award, resume
+      )
+    values (#{id,jdbcType=INTEGER}, #{artid,jdbcType=INTEGER}, #{createtime,jdbcType=DATE}, 
+      #{experience,jdbcType=VARCHAR}, #{award,jdbcType=VARCHAR}, #{resume,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.qfedu.domain.Resume">
+    insert into t_resume
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="artid != null">
+        artid,
+      </if>
+      <if test="createtime != null">
+        createtime,
+      </if>
+      <if test="experience != null">
+        experience,
+      </if>
+      <if test="award != null">
+        award,
+      </if>
+      <if test="resume != null">
+        resume,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="artid != null">
+        #{artid,jdbcType=INTEGER},
+      </if>
+      <if test="createtime != null">
+        #{createtime,jdbcType=DATE},
+      </if>
+      <if test="experience != null">
+        #{experience,jdbcType=VARCHAR},
+      </if>
+      <if test="award != null">
+        #{award,jdbcType=VARCHAR},
+      </if>
+      <if test="resume != null">
+        #{resume,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.qfedu.domain.Resume">
+    update t_resume
+    <set>
+      <if test="artid != null">
+        artid = #{artid,jdbcType=INTEGER},
+      </if>
+      <if test="createtime != null">
+        createtime = #{createtime,jdbcType=DATE},
+      </if>
+      <if test="experience != null">
+        experience = #{experience,jdbcType=VARCHAR},
+      </if>
+      <if test="award != null">
+        award = #{award,jdbcType=VARCHAR},
+      </if>
+      <if test="resume != null">
+        resume = #{resume,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.qfedu.domain.Resume">
+    update t_resume
+    set artid = #{artid,jdbcType=INTEGER},
+      createtime = #{createtime,jdbcType=DATE},
+      experience = #{experience,jdbcType=VARCHAR},
+      award = #{award,jdbcType=VARCHAR},
+      resume = #{resume,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.qfedu.domain.Resume">
+    update t_resume
+    set artid = #{artid,jdbcType=INTEGER},
+      createtime = #{createtime,jdbcType=DATE},
+      experience = #{experience,jdbcType=VARCHAR},
+      award = #{award,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
