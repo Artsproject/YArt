@@ -23,6 +23,8 @@ public class User {
 
     private Integer flag;
 
+    private String activecode;
+
     public Integer getId() {
         return id;
     }
@@ -101,5 +103,13 @@ public class User {
 
     public void setFlag(Integer flag) {
         this.flag = flag;
+    }
+
+    public String getActivecode() {
+        return activecode;
+    }
+
+    public void setActivecode(String activecode) {
+        this.activecode = activecode;
     }
 }

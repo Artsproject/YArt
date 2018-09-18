@@ -196,4 +196,15 @@
       shape = #{shape,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+
+  <select id="querycommend" parameterType="String" resultType="com.qfedu.common.vo.Recommendvo">
+    select u.id, a.truename, wt.picurl, wt.name, wt.material,
+      wt.high, wt.wide, wt.createtime
+      from t_user u
+      LEFT OUTER JOIN t_artist a on u.id = a.uid
+      LEFT OUTER JOIN t_work w on w.uid = u.id
+      LEFT OUTER JOIN t_workitem wt on wt.wid = w.id
+      where u.flag = 0 and wt.type like #{type}
+  </select>
 </mapper>

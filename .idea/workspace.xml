@@ -7,59 +7,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df609a65-3a4f-4b6a-b365-7835b4210434" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Artist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/CartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Collect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/ComItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/County.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Follow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Paylog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Province.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Recaddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Resume.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Work.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/WorkItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/ArtistMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/ArtistMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/CartItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/CartItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/CartMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/CartMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/CityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/CityMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/CollectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/CollectMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/ComItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/ComItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/CommentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/CommentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/CountyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/CountyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/FollowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/FollowMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/OrderItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/OrderItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/PaylogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/PaylogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/ProvinceMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/ProvinceMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/RecaddressMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/RecaddressMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/ResumeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/ResumeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/email/EmailMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/email/EmailUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/redis/JedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/redis/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/redis/TokenTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/result/PageVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/Base64Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/CookieUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/FileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/RandomUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/ShiroEncryUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/vo/Recommendvo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/WorkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Controller/src/main/resources/spring-redis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/WorkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/WorkServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Common/target/Art_Common-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Common/target/classes/com/qfedu/common/result/R.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Common/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Controller/src/main/resources/dbconfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Controller/src/main/resources/dbconfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Common-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Common-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Domain-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Domain-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Mapper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Mapper-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Service-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Service-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Mapper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Mapper/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Service/target/classes/com/qfedu/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Service/target/classes/com/qfedu/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,6 +53,8 @@
     <ignored path="$PROJECT_DIR$/Art_Service/target/" />
     <ignored path="$PROJECT_DIR$/Art_Controller/target/" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
+    <ignored path=".idea/" />
+    <ignored path="YArt.iml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +62,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -92,11 +79,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/UserServiceImpl.java">
+      <file leaf-file-name="TokenTool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/redis/TokenTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            <state relative-caret-position="240">
+              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,14 +91,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Artist.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Artist.java">
+      <file leaf-file-name="spring-redis.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/spring-redis.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/redis/RedisUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8463">
+              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Art_Common/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbconfig.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/dbconfig.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/log4j.properties">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="ArtistMapper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/ArtistMapper.java">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Art_Controller/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -119,6 +149,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -127,7 +159,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response1.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response3.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -135,14 +167,31 @@
         <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/R.java" />
         <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/result/R.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/Art_Common/pom.xml" />
         <option value="$PROJECT_DIR$/Art_Service/pom.xml" />
-        <option value="$PROJECT_DIR$/Art_Mapper/pom.xml" />
         <option value="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/Art_Controller/pom.xml" />
         <option value="$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/UserController.java" />
         <option value="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkMapper.java" />
+        <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/vo/PageVo.java" />
+        <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/vo/Recommendvo.java" />
+        <option value="$PROJECT_DIR$/Art_Mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.java" />
+        <option value="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.xml" />
+        <option value="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/WorkService.java" />
+        <option value="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/WorkServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/WorkController.java" />
+        <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/EmailUtils.java" />
+        <option value="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/User.java" />
+        <option value="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/redis/JedisUtil.java" />
+        <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/email/EmailMsg.java" />
+        <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/email/EmailUtils.java" />
+        <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/redis/TokenTool.java" />
+        <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/CookieUtil.java" />
+        <option value="$PROJECT_DIR$/Art_Controller/src/main/resources/dbconfig.properties" />
+        <option value="$PROJECT_DIR$/Art_Common/pom.xml" />
+        <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/redis/RedisUtil.java" />
       </list>
     </option>
   </component>
@@ -175,31 +224,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Art_Common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Art_Common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Art_Common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Art_Service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Art_Service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -207,10 +232,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="83" />
-    <option name="y" value="22" />
-    <option name="width" value="1181" />
-    <option name="height" value="705" />
+    <option name="x" value="159" />
+    <option name="y" value="11" />
+    <option name="width" value="1127" />
+    <option name="height" value="675" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -231,25 +256,25 @@
             <path>
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Domain" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Domain" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Domain" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Domain" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -257,7 +282,7 @@
             <path>
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Domain" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -266,7 +291,113 @@
             <path>
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Domain" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Mapper" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -277,46 +408,80 @@
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
               <item name="Art_Mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Mapper" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YArt" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -327,7 +492,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ActiveMQ" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Union" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -336,20 +501,54 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\redis" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qfedu.common.util" />
+      <recent name="com.qfedu.common.redis" />
+      <recent name="com.qfedu.common.vo" />
       <recent name="com.qfedu.common.result" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\aaaa\YArt\Art_Controller\src\main\resources" />
+      <recent name="D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common" />
       <recent name="D:\aaaa\YArt\Art_Mapper\src\main\java\com\qfedu\mapper" />
       <recent name="D:\aaaa\YArt\Art_Domain\src\main\java\com\qfedu\domain" />
       <recent name="D:\aaaa\YArt\Art_Controller\src\main" />
-      <recent name="D:\aaaa\YArt\Art_Controller\src\main\resources" />
-      <recent name="D:\aaaa\YArt\Art_Service\src\main\java" />
     </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="showcommend.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="type" />
+                <option name="value" value="油画" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:8081" />
@@ -524,24 +723,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537232518263</updated>
-      <workItem from="1537232521871" duration="8407000" />
+      <workItem from="1537232521871" duration="15095000" />
     </task>
+    <task id="LOCAL-00001" summary="生成mapper domain层">
+      <created>1537270174432</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537270174433</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8407000" />
+    <option name="totallyTimeSpent" value="15095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.3289256" />
+      <window_info active="true" anchor="bottom" id="Event Log" sideWeight="0.60124886" side_tool="true" visible="true" weight="0.32580644" />
       <window_info anchor="bottom" id="Application Servers" weight="0.3289256" />
-      <window_info anchor="right" id="Maven Projects" weight="0.2509225" />
+      <window_info anchor="right" id="Maven Projects" weight="0.22411004" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info anchor="right" id="Database" weight="0.32841328" />
+      <window_info anchor="right" id="Database" weight="0.32686085" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -552,13 +759,13 @@
       <window_info id="Image Layers" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="REST Client" weight="0.492562" />
-      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289256" />
+      <window_info anchor="bottom" id="REST Client" weight="0.43225807" />
+      <window_info anchor="bottom" id="Version Control" sideWeight="0.3987511" weight="0.37086093" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27096775" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24514563" />
-      <window_info id="Web" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4943182" visible="true" weight="0.2669903" />
+      <window_info id="Web" sideWeight="0.5056818" side_tool="true" weight="0.29288027" />
       <window_info anchor="right" id="BPMNPalette" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info id="Favorites" side_tool="true" />
@@ -575,6 +782,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="生成mapper domain层" />
+    <option name="LAST_COMMIT_MESSAGE" value="生成mapper domain层" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/R.java">
@@ -598,63 +809,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2628">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="31" column="69" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Mapper/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/dbconfig.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/spring-dao.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -681,17 +841,213 @@
         <state relative-caret-position="-585" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/pom.xml">
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+        <state relative-caret-position="315">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="200" column="94" selection-start-line="200" selection-start-column="94" selection-end-line="200" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/result/PageVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/vo/Recommendvo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-603">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="e#1476#1477#0" expanded="true" />
+            <element signature="e#1520#1521#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/ComItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/ComItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/ArtistMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Artist.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/WorkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="375">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/WorkServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/WorkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/RandomUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/Base64Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/EmailUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="71" column="134" selection-start-line="71" selection-start-column="134" selection-end-line="71" selection-end-column="134" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/email/EmailUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/redis/JedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-723">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/email/EmailMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/ShiroEncryUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -700,7 +1056,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
+        <state relative-caret-position="270">
           <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -708,11 +1064,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Artist.java">
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="86" selection-start-line="17" selection-start-column="86" selection-end-line="17" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="e#2001#2002#0" expanded="true" />
+            <element signature="e#2034#2035#0" expanded="true" />
+            <element signature="e#2086#2087#0" expanded="true" />
+            <element signature="e#2130#2131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="105" column="10" selection-start-line="105" selection-start-column="10" selection-end-line="110" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/TokenTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/CookieUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-840">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/redis/TokenTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Controller/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/ArtistMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/dbconfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/spring-redis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/redis/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8463">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
@@ -768,7 +1220,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Art_Service</last-edited>
+          <last-edited>Art_Mapper</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

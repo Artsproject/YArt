@@ -1,3 +1,11 @@
+GET http://localhost:8081/showcommend.do?type=油画
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-18T093445.200.json
+
+###
+
 GET http://localhost:8081/useradd.do?nickname=martin&password=123
 Accept: */*
 Cache-Control: no-cache

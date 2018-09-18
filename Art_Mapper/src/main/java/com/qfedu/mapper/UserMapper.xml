@@ -12,9 +12,10 @@
     <result column="birth" jdbcType="DATE" property="birth" />
     <result column="img" jdbcType="VARCHAR" property="img" />
     <result column="flag" jdbcType="INTEGER" property="flag" />
+    <result column="activecode" jdbcType="VARCHAR" property="activecode" />
   </resultMap>
   <sql id="Base_Column_List">
-    id, nickname, truename, password, email, tel, gender, birth, img, flag
+    id, nickname, truename, password, email, tel, gender, birth, img, flag, activecode
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
