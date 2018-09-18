@@ -2,6 +2,54 @@ GET http://localhost:8081/showcommend.do?type=油画
 Accept: */*
 Cache-Control: no-cache
 
+<> 2018-09-18T102452.200.json
+
+###
+
+GET http://localhost:8081/showcommend.do?type=油画
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-18T102156.404.html
+
+###
+
+GET http://localhost:8081/showcommend.do?type=油画
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-18T102154.404.html
+
+###
+
+GET http://localhost:8081/showcommend.do?type=油画
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-18T102153.404.html
+
+###
+
+GET http://localhost:8081/showcommend.do?type=油画
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-18T102135.404.html
+
+###
+
+GET http://localhost:8081/showcommend.do?type=油画
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-18T101839.500.html
+
+###
+
+GET http://localhost:8081/showcommend.do?type=油画
+Accept: */*
+Cache-Control: no-cache
+
 <> 2018-09-18T093445.200.json
 
 ###

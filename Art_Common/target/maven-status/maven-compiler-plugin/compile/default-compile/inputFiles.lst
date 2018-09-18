@@ -1,8 +1,13 @@
-D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\util\EmailUtils.java
-D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\util\Base64Utils.java
+D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\email\EmailUtils.java
 D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\util\ShiroEncryUtil.java
 D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\vo\Recommendvo.java
 D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\util\RandomUtils.java
+D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\email\EmailMsg.java
+D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\redis\JedisUtil.java
+D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\util\CookieUtil.java
+D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\redis\RedisUtil.java
+D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\redis\TokenTool.java
+D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\util\Base64Utils.java
 D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\util\FileUtil.java
 D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\result\PageVo.java
 D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\result\R.java
