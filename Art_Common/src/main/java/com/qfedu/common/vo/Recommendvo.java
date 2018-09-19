@@ -11,13 +11,36 @@ public class Recommendvo {
 
     private String material;
 
+    private int price;
+
     private int high;
 
     private int wide;
 
     private int deep;
 
+    private int flag;
+
+    private String type;
+
+    private String maininfo;
+
     private String createtime;
+
+
+    private int p0;
+    private int p1;
+
+
+
+    public void setP0(int p0) {
+        this.p0 = p0;
+    }
+
+
+    public void setP1(int p1) {
+        this.p1 = p1;
+    }
 
     public int getId() {
         return id;
@@ -89,5 +112,37 @@ public class Recommendvo {
 
     public void setCreatetime(String createtime) {
         this.createtime = createtime;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getMaininfo() {
+        return maininfo;
+    }
+
+    public void setMaininfo(String maininfo) {
+        this.maininfo = maininfo;
+    }
+
+    public int getFlag() {
+        return flag;
+    }
+
+    public void setFlag(int flag) {
+        this.flag = flag;
     }
 }

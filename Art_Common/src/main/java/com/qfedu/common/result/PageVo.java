@@ -6,7 +6,7 @@ public class PageVo<T> {
     private int code;
     private String msg;
     private List<T> data;
-
+    private int count;
     public int getCode() {
         return code;
     }
@@ -31,16 +31,20 @@ public class PageVo<T> {
         this.data = data;
     }
 
-    public static <T> PageVo<T> createPage(List<T> data, int count) {
 
-        PageVo<T> pageVo = new PageVo<>();
-        pageVo.setCode(0);
-        pageVo.setMsg("ok");
+    public static <T> PageVo<T> createPage(List<T> data,int count){
+        PageVo<T> pageVo=new PageVo<>();
+        pageVo.setCount(count);
         pageVo.setData(data);
-        return  pageVo;
+        return pageVo;
     }
-
-
     public PageVo() {}
 
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
 }

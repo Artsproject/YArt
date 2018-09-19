@@ -1,64 +1,400 @@
-GET http://localhost:8081/showcommend.do?type=油画
+GET http://localhost:8081/querygo.do?type=水彩
 Accept: */*
 Cache-Control: no-cache
 
-<> 2018-09-18T102452.200.json
+<> 2018-09-19T103625.200.json
 
 ###
 
-GET http://localhost:8081/showcommend.do?type=油画
+GET http://localhost:8081/querygo.do?type=水彩
 Accept: */*
 Cache-Control: no-cache
 
-<> 2018-09-18T102156.404.html
+<> 2018-09-19T103622.200.json
 
 ###
 
-GET http://localhost:8081/showcommend.do?type=油画
+GET http://localhost:8081/querygo.do?type=水彩
 Accept: */*
 Cache-Control: no-cache
 
-<> 2018-09-18T102154.404.html
+<> 2018-09-19T103544.500.html
 
 ###
 
-GET http://localhost:8081/showcommend.do?type=油画
+GET http://localhost:8081/querygo.do?type=水彩
 Accept: */*
 Cache-Control: no-cache
 
-<> 2018-09-18T102153.404.html
+<> 2018-09-19T103543.500.html
 
 ###
 
-GET http://localhost:8081/showcommend.do?type=油画
+GET http://localhost:8081/querygo.do?type=水彩
 Accept: */*
 Cache-Control: no-cache
 
-<> 2018-09-18T102135.404.html
+<> 2018-09-19T103454.500.html
 
 ###
 
-GET http://localhost:8081/showcommend.do?type=油画
+GET http://localhost:8081/querygo.do?type=水彩&p0=1&p1=10000
 Accept: */*
 Cache-Control: no-cache
 
-<> 2018-09-18T101839.500.html
+<> 2018-09-19T103238.200.json
 
 ###
 
-GET http://localhost:8081/showcommend.do?type=油画
+GET http://localhost:8081/querygo.do?type=水彩
 Accept: */*
 Cache-Control: no-cache
 
-<> 2018-09-18T093445.200.json
+<> 2018-09-19T103202.200.json
 
 ###
 
-GET http://localhost:8081/useradd.do?nickname=martin&password=123
+GET http://localhost:8081/querygo.do?type=水彩
 Accept: */*
 Cache-Control: no-cache
 
-<> 2018-09-18T092649.200.json
+<> 2018-09-19T103053.500.html
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102707.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩&p0=1&p1=100000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102605.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102532-1.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102532.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102529-4.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102529-3.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102529-2.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102529-1.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102529.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102528-2.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102528-1.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102528.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102527.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102525.200.json
+
+###
+
+GET http://localhost:8081/querygo.do
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102509.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?p0=4000&p1=7001
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102257-1.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?p0=4000&p1=7001
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102257.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?p0=4000&p1=70001
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102252.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?p0=4000&p1=400000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102242.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=油画&maininfo=风景写实&p0=4000&p1=7000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102221.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=油画&maininfo=风景写实&p0=4000&p1=7000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T102029.500.html
+
+###
+
+GET http://localhost:8081/querygo.do?type=油画&maininfo=风景写实
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T101402.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=油画&maininfo=风景写实
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T101222.500.html
+
+###
+
+GET http://localhost:8081/querygo.do?type=油画&maininfo=风景写实
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T100949.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=油画
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T100706.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?maininfo=风景写实
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T100640.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?maininfo=风景写实
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T100441.500.html
+
+###
+
+GET http://localhost:8081/querygo.do?maininfo=风景写实
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T100250.500.html
+
+###
+
+GET http://localhost:8081/querygo.do?p0=3000&p1=7000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T095907.500.html
+
+###
+
+GET http://localhost:8081/querygo.do?p0=3000&p1=7000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T095721.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=油画
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T095657.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?maininfo=风景写实&flag=0
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T095629.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?maininfo=风景写实&flag=
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T095617.400.html
+
+###
+
+GET http://localhost:8081/querygo.do?maininfo=风景写实
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T095436.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?maininfo=风景写实
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T094901.500.html
+
+###
+
+GET http://localhost:8081/querygo.do?maininfo=风景写实
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T094713.500.html
+
+###
+
+GET http://localhost:8081/querygo.do?maininfo=风景写实
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T094443.500.html
+
+###
+
+GET http://localhost:8081/querygo.do?maininfo=风景写实
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T094259.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?maininfo=风景写实
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T094257.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?type=水彩
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T094221.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?p0=200&p1=7000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T094114.200.json
+
+###
+
+GET http://localhost:8081/querygo.do?p0=200&p1=7000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-19T093930.500.html
 
 ###
 

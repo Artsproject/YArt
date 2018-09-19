@@ -7,66 +7,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df609a65-3a4f-4b6a-b365-7835b4210434" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Art_Controller_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Art_Controller_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_javax_mail_api_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180130.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-09-18T092649.200.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/PicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Pic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/PicMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/PicMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/PicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/PicServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Art_Common/Art_Common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Common/Art_Common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Art_Common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Art_Common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Art_Controller/Art_Controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Controller/Art_Controller.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/classes/dbconfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/classes/dbconfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/result/PageVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/result/PageVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/vo/Recommendvo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/vo/Recommendvo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/WorkController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Common-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Common-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Domain-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Domain-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Mapper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Mapper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Service-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Controller/target/Art_Controller-1.0.0/WEB-INF/lib/Art_Service-1.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Art_Controller/target/classes/dbconfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Controller/target/classes/dbconfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Art_Domain/Art_Domain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Domain/Art_Domain.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Art_Domain/target/classes/com/qfedu/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Domain/target/classes/com/qfedu/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Art_Mapper/Art_Mapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Mapper/Art_Mapper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Art_Mapper/target/classes/com/qfedu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Mapper/target/classes/com/qfedu/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Art_Service/Art_Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Service/Art_Service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YArt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/YArt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Domain/target/Art_Domain-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Domain/target/Art_Domain-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Domain/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Mapper/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Mapper/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Mapper/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Mapper/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/WorkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/WorkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/WorkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/WorkServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Art_Service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Art_Service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,7 +53,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" show_ignored="true" />
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -106,13 +72,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/UserController.java">
+      <file leaf-file-name="WorkItemMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="391">
+              <caret line="240" column="28" selection-start-line="240" selection-start-column="28" selection-end-line="240" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/WorkServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1009#1010#0" expanded="true" />
+                <element signature="e#1057#1058#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,8 +98,8 @@
       <file leaf-file-name="WorkController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/WorkController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+            <state relative-caret-position="282">
+              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,18 +107,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/webapp/WEB-INF/web.xml">
+      <file leaf-file-name="Recommendvo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/vo/Recommendvo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Art_Controller/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="49">
+              <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+              <folding>
+                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#639#640#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+                <element signature="e#2069#2070#0" expanded="true" />
+                <element signature="e#2096#2097#0" expanded="true" />
+                <element signature="e#2133#2134#0" expanded="true" />
+                <element signature="e#2165#2166#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,7 +140,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response15.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response207.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -176,13 +155,7 @@
         <option value="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkMapper.java" />
         <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/vo/PageVo.java" />
-        <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/vo/Recommendvo.java" />
         <option value="$PROJECT_DIR$/Art_Mapper/pom.xml" />
-        <option value="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.java" />
-        <option value="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.xml" />
-        <option value="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/WorkService.java" />
-        <option value="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/WorkServiceImpl.java" />
-        <option value="$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/WorkController.java" />
         <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/EmailUtils.java" />
         <option value="$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/User.java" />
         <option value="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/UserMapper.xml" />
@@ -191,9 +164,22 @@
         <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/email/EmailUtils.java" />
         <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/redis/TokenTool.java" />
         <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/CookieUtil.java" />
-        <option value="$PROJECT_DIR$/Art_Controller/src/main/resources/dbconfig.properties" />
         <option value="$PROJECT_DIR$/Art_Common/pom.xml" />
         <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/redis/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/Art_Controller/src/main/resources/dbconfig.properties" />
+        <option value="$PROJECT_DIR$/Art_Controller/src/main/resources/spring-redis.xml" />
+        <option value="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/PicMapper.java" />
+        <option value="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/PicMapper.xml" />
+        <option value="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/PicService.java" />
+        <option value="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/PicServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/PicController.java" />
+        <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/result/PageVo.java" />
+        <option value="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/WorkService.java" />
+        <option value="$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/WorkServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/WorkController.java" />
+        <option value="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.java" />
+        <option value="$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/vo/Recommendvo.java" />
+        <option value="$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.xml" />
       </list>
     </option>
   </component>
@@ -229,26 +215,16 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Art_Common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Art_Mapper" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Art_Common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Art_Mapper" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Art_Controller" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Art_Controller" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Art_Controller" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="Art_Service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
@@ -258,18 +234,19 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="159" />
-    <option name="y" value="12" />
-    <option name="width" value="1127" />
-    <option name="height" value="674" />
+    <option name="x" value="274" />
+    <option name="y" value="47" />
+    <option name="width" value="883" />
+    <option name="height" value="754" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,88 +257,84 @@
             <path>
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="qfedu" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YArt" type="b2602c69:ProjectViewProjectNode" />
               <item name="YArt" type="462c0819:PsiDirectoryNode" />
-              <item name="Art_Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Art_Common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="qfedu" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/misc.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../18FMWEB" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -370,8 +343,12 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\redis" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\aaaa\YArt\Art_Mapper\src\main\java\com\qfedu\mapper" />
+      <recent name="D:\aaaa\YArt\Art_Domain\src\main\java\com\qfedu\domain" />
+      <recent name="D:\aaaa\YArt\Art_Controller\src\main\resources" />
+      <recent name="D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common" />
+      <recent name="D:\aaaa\YArt\Art_Controller\src\main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.qfedu.common.util" />
@@ -379,12 +356,8 @@
       <recent name="com.qfedu.common.vo" />
       <recent name="com.qfedu.common.result" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\aaaa\YArt\Art_Controller\src\main\resources" />
-      <recent name="D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common" />
-      <recent name="D:\aaaa\YArt\Art_Mapper\src\main\java\com\qfedu\mapper" />
-      <recent name="D:\aaaa\YArt\Art_Domain\src\main\java\com\qfedu\domain" />
-      <recent name="D:\aaaa\YArt\Art_Controller\src\main" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\aaaa\YArt\Art_Common\src\main\java\com\qfedu\common\redis" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -393,7 +366,783 @@
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="type" />
+                <option name="value" value="水彩" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="type" />
+                <option name="value" value="水彩" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="p0" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="p1" />
+                <option name="value" value="10000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="type" />
+                <option name="value" value="水彩" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="p0" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="p1" />
+                <option name="value" value="100000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="p0" />
+                <option name="value" value="4000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="p1" />
+                <option name="value" value="7001" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="p0" />
+                <option name="value" value="4000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="p1" />
+                <option name="value" value="70001" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="p0" />
+                <option name="value" value="4000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="p1" />
+                <option name="value" value="400000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="type" />
+                <option name="value" value="油画" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="maininfo" />
+                <option name="value" value="风景写实" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="p0" />
+                <option name="value" value="4000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="p1" />
+                <option name="value" value="7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="type" />
+                <option name="value" value="油画" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="maininfo" />
+                <option name="value" value="风景写实" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="type" />
+                <option name="value" value="油画" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="maininfo" />
+                <option name="value" value="风景写实" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="p0" />
+                <option name="value" value="3000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="p1" />
+                <option name="value" value="7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="maininfo" />
+                <option name="value" value="风景写实" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="flag" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="maininfo" />
+                <option name="value" value="风景写实" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="flag" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="querygo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="p0" />
+                <option name="value" value="200" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="p1" />
+                <option name="value" value="7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="lastest.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="page" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="lastest.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="page" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="lastest.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="page" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="lastest.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="page" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="4" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="lastest.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="page" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="limit" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
           <option name="urlPath" value="showcommend.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="type" />
+                <option name="value" value="水彩" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="showcommend.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="lunboshow.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="showcommend.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="type" />
+                <option name="value" value="油画" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="lunboshwo.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="showcommend.do" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="lunboshwo.do" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -593,7 +1342,8 @@
       <option name="presentableId" value="Default" />
       <updated>1537232518263</updated>
       <workItem from="1537232521871" duration="15565000" />
-      <workItem from="1537280370892" duration="1400000" />
+      <workItem from="1537280370892" duration="1931000" />
+      <workItem from="1537319767764" duration="24704000" />
     </task>
     <task id="LOCAL-00001" summary="生成mapper domain层">
       <created>1537270174432</created>
@@ -609,39 +1359,54 @@
       <option name="project" value="LOCAL" />
       <updated>1537279997567</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge branch 'master' of https://github.com/Artsproject/YArt&#10;&#10;# Conflicts:&#10;#&#9;.idea/httpRequests/http-requests-log.http&#10;#&#9;.idea/workspace.xml">
+      <created>1537281793270</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1537281793270</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge branch 'master' of https://github.com/Artsproject/YArt&#10;&#10;# Conflicts:&#10;#&#9;.idea/httpRequests/http-requests-log.http&#10;#&#9;.idea/workspace.xml">
+      <created>1537281897557</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1537281897557</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16965000" />
+    <option name="totallyTimeSpent" value="42200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.6593851" side_tool="true" visible="true" weight="0.36935484" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3289256" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.26779935" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.6440129" side_tool="true" weight="0.2629032" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.3289256" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.22411004" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="3" weight="0.32686085" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.502994" side_tool="true" weight="0.28478965" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="REST Client" order="7" weight="0.3983871" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.34061489" visible="true" weight="0.36935484" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59546924" weight="0.4483871" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4971591" visible="true" weight="0.2710356" />
+      <window_info anchor="bottom" id="REST Client" order="15" weight="0.45806453" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.35598704" weight="0.2629032" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59546924" weight="0.36290324" />
+      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.497006" visible="true" weight="0.28478965" />
       <window_info id="Web" order="2" sideWeight="0.5056818" side_tool="true" weight="0.29288027" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -661,49 +1426,19 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="生成mapper domain层" />
     <MESSAGE value="工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="工具类" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/Artsproject/YArt&#10;&#10;# Conflicts:&#10;#&#9;.idea/httpRequests/http-requests-log.http&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/Artsproject/YArt&#10;&#10;# Conflicts:&#10;#&#9;.idea/httpRequests/http-requests-log.http&#10;#&#9;.idea/workspace.xml" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/dbconfig.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/spring-redis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/R.java" />
-    <entry file="file://$PROJECT_DIR$/Art_Domain/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -715,64 +1450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="200" column="94" selection-start-line="200" selection-start-column="94" selection-end-line="200" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/vo/Recommendvo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-603">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#828#829#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
-            <element signature="e#1106#1107#0" expanded="true" />
-            <element signature="e#1134#1135#0" expanded="true" />
-            <element signature="e#1161#1162#0" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
-            <element signature="e#1258#1259#0" expanded="true" />
-            <element signature="e#1285#1286#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#1391#1392#0" expanded="true" />
-            <element signature="e#1424#1425#0" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1520#1521#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -792,33 +1469,6 @@
     <entry file="file://$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Artist.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/WorkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/WorkServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/EmailUtils.java" />
     <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -831,9 +1481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-510">
           <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,16 +1488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -906,9 +1543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -916,9 +1550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -926,9 +1557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -943,9 +1571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -960,19 +1585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/dbconfig.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -983,47 +1595,191 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/result/PageVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/util/ShiroEncryUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Controller/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Day All 3rd/Day 01 maven/repository/repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/binding/MapperMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/spring-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="12" column="67" lean-forward="true" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+          <folding>
+            <element signature="e#713#726#0" expanded="true" />
+            <element signature="e#768#778#0" expanded="true" />
+            <element signature="e#825#840#0" expanded="true" />
+            <element signature="e#887#902#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/dbconfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/spring-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/spring-redis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/PicMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/spring-redis.xml">
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+        <state relative-caret-position="-820" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/resources/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="70">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Domain/src/main/java/com/qfedu/domain/Pic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/PicMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="18" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/PicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/result/PageVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/PicServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/PicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/WorkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1032,23 +1788,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/java/com/qfedu/controller/WorkController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state relative-caret-position="282">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/Art_Service/src/main/java/com/qfedu/service/impl/WorkServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315" />
+        <state relative-caret-position="477">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Art_Controller/pom.xml">
+    <entry file="file://$PROJECT_DIR$/Art_Common/src/main/java/com/qfedu/common/vo/Recommendvo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        <state relative-caret-position="49">
+          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          <folding>
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
+            <element signature="e#2096#2097#0" expanded="true" />
+            <element signature="e#2133#2134#0" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Art_Mapper/src/main/java/com/qfedu/mapper/WorkItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="240" column="28" selection-start-line="240" selection-start-column="28" selection-end-line="240" selection-end-column="28" />
         </state>
       </provider>
     </entry>

@@ -199,12 +199,48 @@
 
 
   <select id="querycommend" parameterType="String" resultType="com.qfedu.common.vo.Recommendvo">
-    select u.id, a.truename, wt.picurl, wt.name, wt.material,
+    select u.id, a.truename, wt.picurl, wt.price, wt.name, wt.material,
       wt.high, wt.wide, wt.createtime
       from t_user u
       LEFT OUTER JOIN t_artist a on u.id = a.uid
       LEFT OUTER JOIN t_work w on w.uid = u.id
       LEFT OUTER JOIN t_workitem wt on wt.wid = w.id
       where u.flag = 0 and wt.type like #{type}
+  </select>
+
+  <select id="selectCount" resultType="int">
+    select count(*) from t_workitem
+  </select>
+
+  <select id="qeurylastest" resultType="com.qfedu.common.vo.Recommendvo">
+
+  select u.id, a.truename, wt.picurl, wt.name, wt.material,
+      wt.high, wt.wide, wt.price, wt.createtime
+      from t_user u
+      LEFT OUTER JOIN t_artist a on u.id = a.uid
+      LEFT OUTER JOIN t_work w on w.uid = u.id
+      LEFT OUTER JOIN t_workitem wt on wt.wid = w.id
+      where u.flag = 0 ORDER BY wt.createtime DESC LIMIT #{index},#{count}
+  </select>
+
+  
+  <select id="queryAllarea" resultType="com.qfedu.common.vo.Recommendvo">
+   select u.id, a.truename, wt.picurl, wt.price, wt.name, wt.type, wt.maininfo, wt.material,
+      wt.high, wt.wide, wt.createtime
+      from t_user u
+      LEFT OUTER JOIN t_artist a on u.id = a.uid
+      LEFT OUTER JOIN t_work w on w.uid = u.id
+      LEFT OUTER JOIN t_workitem wt on wt.wid = w.id
+      <where> u.flag = 0
+        <if test="type != null">
+          and wt.type = #{type}
+        </if>
+        <if test="maininfo != null">
+          and wt.maininfo = #{maininfo}
+        </if>
+        <if test="p0 != null">
+          and wt.price between #{p0} and #{p1}
+        </if>
+      </where>
   </select>
 </mapper>
