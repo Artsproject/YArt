@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qfedu.mapper.SoldWorkMapper">
+
+  <select id="selectPrintNosByWorkId" resultType="java.lang.Integer">
+    SELECT print_no FROM t_soldwork WHERE wid=#{workId}
+  </select>
+
+  <insert id="insert">
+    INSERT INTO t_soldwork value(null, #{workId}, #{printNo})
+  </insert>
+
+  <select id="selectPrintCountByWorkId" resultType="int">
+    SELECT print_count FROM t_workitem WHERE wid=#{workId}
+  </select>
+
+
+</mapper>

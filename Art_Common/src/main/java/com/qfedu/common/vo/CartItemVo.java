@@ -1,19 +1,50 @@
-package com.qfedu.domain;
+package com.qfedu.common.vo;
+
+import com.qfedu.domain.Artist;
+import com.qfedu.domain.WorkItem;
 
 import java.util.Date;
 
-public class CartItem {
-    private Integer id;
+/**
+ * 作者：lienzhao
+ * 时间：2018/9/19 0019
+ */
+public class CartItemVo {
 
-    private Integer cid;
+    private Integer cartItemId;
 
-    private Integer wid;
+    private WorkItem workItem;
+    private Artist artist;
 
+    private Date createdate;
     private Integer framePrice;//装裱费用
     private Integer transPrice;//运输费用
     private String frameType;//装裱类型
     private String cardType;//卡纸类型
     private Integer printNo;//版号
+
+    private Integer wid;//作品ID，对应前端提交信息
+
+    public CartItemVo() {
+    }
+
+
+
+    public Integer getWid() {
+        return wid;
+    }
+
+    public void setWid(Integer wid) {
+        this.wid = wid;
+    }
+
+    public Integer getCartItemId() {
+        return cartItemId;
+    }
+
+    public void setCartItemId(Integer cartItemId) {
+        this.cartItemId = cartItemId;
+    }
 
     public Integer getFramePrice() {
         return framePrice;
@@ -55,53 +86,43 @@ public class CartItem {
         this.printNo = printNo;
     }
 
-    private Date createtime;
-
-    public Integer getId() {
-        return id;
+    public WorkItem getWorkItem() {
+        return workItem;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setWorkItem(WorkItem workItem) {
+        this.workItem = workItem;
     }
 
-    public Integer getCid() {
-        return cid;
+    public Artist getArtist() {
+        return artist;
     }
 
-    public void setCid(Integer cid) {
-        this.cid = cid;
+    public void setArtist(Artist artist) {
+        this.artist = artist;
     }
 
-    public Integer getWid() {
-        return wid;
+    public Date getCreatedate() {
+        return createdate;
     }
 
-    public void setWid(Integer wid) {
-        this.wid = wid;
-    }
-
-
-    public Date getCreatetime() {
-        return createtime;
-    }
-
-    public void setCreatetime(Date createtime) {
-        this.createtime = createtime;
+    public void setCreatedate(Date createdate) {
+        this.createdate = createdate;
     }
 
     @Override
     public String toString() {
-        return "CartItem{" +
-                "id=" + id +
-                ", cid=" + cid +
-                ", wid=" + wid +
+        return "CartItemVo{" +
+                "cartItemId=" + cartItemId +
+                ", workItem=" + workItem +
+                ", artist=" + artist +
+                ", createdate=" + createdate +
                 ", framePrice=" + framePrice +
                 ", transPrice=" + transPrice +
                 ", frameType='" + frameType + '\'' +
                 ", cardType='" + cardType + '\'' +
                 ", printNo=" + printNo +
-                ", createtime=" + createtime +
+                ", wid=" + wid +
                 '}';
     }
 }

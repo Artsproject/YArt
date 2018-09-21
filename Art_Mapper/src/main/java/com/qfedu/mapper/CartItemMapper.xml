@@ -1,93 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.qfedu.mapper.CartItemMapper">
-  <resultMap id="BaseResultMap" type="com.qfedu.domain.CartItem">
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="cid" jdbcType="INTEGER" property="cid" />
-    <result column="wid" jdbcType="INTEGER" property="wid" />
-    <result column="count" jdbcType="INTEGER" property="count" />
-    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
-  </resultMap>
-  <sql id="Base_Column_List">
-    id, cid, wid, count, createtime
-  </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from t_cartitem
-    where id = #{id,jdbcType=INTEGER}
-  </select>
+
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from t_cartitem
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.qfedu.domain.CartItem">
-    insert into t_cartitem (id, cid, wid, 
-      count, createtime)
-    values (#{id,jdbcType=INTEGER}, #{cid,jdbcType=INTEGER}, #{wid,jdbcType=INTEGER}, 
-      #{count,jdbcType=INTEGER}, #{createtime,jdbcType=TIMESTAMP})
+
+  <select id="selectCountByWorkIdAndPrintNo" resultType="int">
+    SELECT
+  </select>
+
+
+  <insert id="insert" parameterType="com.qfedu.domain.CartItem" useGeneratedKeys="true">
+    insert into t_cartitem (cid, wid, createtime, print_no,
+    frame_type, frame_price, card_type, trans_price)
+    values (#{cid,jdbcType=INTEGER}, #{wid,jdbcType=INTEGER}, now(),
+    #{printNo}, #{frameType}, #{framePrice}, #{cardType}, #{transPrice})
   </insert>
-  <insert id="insertSelective" parameterType="com.qfedu.domain.CartItem">
-    insert into t_cartitem
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
-      </if>
-      <if test="cid != null">
-        cid,
-      </if>
-      <if test="wid != null">
-        wid,
-      </if>
-      <if test="count != null">
-        count,
-      </if>
-      <if test="createtime != null">
-        createtime,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=INTEGER},
-      </if>
-      <if test="cid != null">
-        #{cid,jdbcType=INTEGER},
-      </if>
-      <if test="wid != null">
-        #{wid,jdbcType=INTEGER},
-      </if>
-      <if test="count != null">
-        #{count,jdbcType=INTEGER},
-      </if>
-      <if test="createtime != null">
-        #{createtime,jdbcType=TIMESTAMP},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.qfedu.domain.CartItem">
-    update t_cartitem
-    <set>
-      <if test="cid != null">
-        cid = #{cid,jdbcType=INTEGER},
-      </if>
-      <if test="wid != null">
-        wid = #{wid,jdbcType=INTEGER},
-      </if>
-      <if test="count != null">
-        count = #{count,jdbcType=INTEGER},
-      </if>
-      <if test="createtime != null">
-        createtime = #{createtime,jdbcType=TIMESTAMP},
-      </if>
-    </set>
-    where id = #{id,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.qfedu.domain.CartItem">
-    update t_cartitem
-    set cid = #{cid,jdbcType=INTEGER},
-      wid = #{wid,jdbcType=INTEGER},
-      count = #{count,jdbcType=INTEGER},
-      createtime = #{createtime,jdbcType=TIMESTAMP}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
+
+
 </mapper>

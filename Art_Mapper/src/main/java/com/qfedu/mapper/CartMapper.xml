@@ -6,9 +6,105 @@
     <result column="uid" jdbcType="INTEGER" property="uid" />
     <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
   </resultMap>
+
+  <!--新增CartItemVo结果映射-->
+  <resultMap id="CartItemVoRM" type="com.qfedu.common.vo.CartItemVo">
+    <id property="cartItemId" column="cart_item_id" jdbcType="INTEGER"/>
+    <result column="createdate" property="createdate" jdbcType="TIMESTAMP" javaType="java.util.Date"/>
+    <result column="print_no" property="printNo"/>
+    <result column="frame_type" property="frameType" jdbcType="VARCHAR"/>
+    <result column="card_type" property="cardType" jdbcType="VARCHAR"/>
+    <result column="frame_price" property="framePrice" jdbcType="INTEGER"/>
+    <result column="trans_price" property="transPrice" jdbcType="INTEGER"/>
+
+    <association property="workItem" javaType="com.qfedu.domain.WorkItem">
+      <id column="work_item_id" property="id" jdbcType="INTEGER"></id>
+      <result column="work_item_id" property="id" jdbcType="INTEGER"/>
+      <result column="wid" jdbcType="INTEGER" property="wid" />
+      <result column="picurl" jdbcType="VARCHAR" property="picurl" />
+      <result column="name" jdbcType="VARCHAR" property="name" />
+      <result column="price" jdbcType="INTEGER" property="price" />
+      <result column="wide" jdbcType="INTEGER" property="wide" />
+      <result column="high" jdbcType="INTEGER" property="high" />
+      <result column="deep" jdbcType="INTEGER" property="deep" />
+    </association>
+    <association property="artist" javaType="com.qfedu.domain.Artist">
+      <id column="artist_id" jdbcType="INTEGER" property="id" />
+      <result column="artist_uid" jdbcType="INTEGER" property="uid" />
+      <result column="artist_truename" jdbcType="VARCHAR" property="truename" />
+    </association>
+  </resultMap>
+
+
+
+  <select id="selectItemsByArtistUid" resultMap="CartItemVoRM" >
+    SELECT
+    ci.`id` cart_item_id,
+    ci.`createtime`,
+    ci.`card_type`,
+    ci.`frame_type`,
+    ci.`frame_price`,
+    ci.`trans_price`,
+    ci.`print_no`,
+    wi.`id` work_item_id,
+    wi.`wid`,
+    wi.`name`,
+    wi.`picurl`,
+    wi.`price`,
+    wi.`wide`,
+    wi.`high`,
+    wi.`deep`,
+    a.`id` artist_id,
+    a.`truename` artist_truename,
+    a.`uid` artist_uid
+    FROM t_cart c
+    LEFT JOIN t_cartitem ci ON c.id=ci.`cid`
+    LEFT JOIN t_workitem wi ON ci.`wid`=wi.`wid`
+    LEFT JOIN t_work w ON wi.`wid`=w.`id`
+    LEFT JOIN t_artist a ON w.`uid`=a.`uid`
+    WHERE c.uid = #{uid}
+  </select>
+
+  <select id="selectItemByItemId" resultMap="CartItemVoRM" >
+    SELECT
+    ci.`id` cart_item_id,
+    ci.`createtime`,
+    ci.`card_type`,
+    ci.`frame_type`,
+    ci.`frame_price`,
+    ci.`trans_price`,
+    ci.`print_no`,
+    wi.`id` work_item_id,
+    wi.`wid`,
+    wi.`name`,
+    wi.`picurl`,
+    wi.`price`,
+    wi.`wide`,
+    wi.`high`,
+    wi.`deep`,
+    a.`id` artist_id,
+    a.`truename` artist_truename,
+    a.`uid` artist_uid
+    FROM t_cart c
+    LEFT JOIN t_cartitem ci ON c.id=ci.`cid`
+    LEFT JOIN t_workitem wi ON ci.`wid`=wi.`wid`
+    LEFT JOIN t_work w ON wi.`wid`=w.`id`
+    LEFT JOIN t_artist a ON w.`uid`=a.`uid`
+    WHERE ci.id = #{cartItemId}
+  </select>
+
+
   <sql id="Base_Column_List">
     id, uid, createtime
   </sql>
+
+  <select id="selectByUid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_cart
+    where uid = #{uid,jdbcType=INTEGER}
+  </select>
+
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
