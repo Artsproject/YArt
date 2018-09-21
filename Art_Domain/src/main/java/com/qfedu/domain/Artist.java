@@ -17,6 +17,8 @@ public class Artist {
 
     private String picurl;
 
+    private Work work;
+
     public Integer getId() {
         return id;
     }
@@ -79,5 +81,13 @@ public class Artist {
 
     public void setPicurl(String picurl) {
         this.picurl = picurl == null ? null : picurl.trim();
+    }
+
+    public Work getWork() {
+        return work;
+    }
+
+    public void setWork(Work work) {
+        this.work = work;
     }
 }

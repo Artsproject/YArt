@@ -1,8 +1,7 @@
 package com.qfedu.controller;
 
 import com.qfedu.common.result.PageVo;
-import com.qfedu.domain.Pic;
-import com.qfedu.service.PicService;
+import com.qfedu.service.ArtService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,23 +10,23 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 @Controller
-public class PicController {
-
+public class ArtController {
     @Autowired
-    private PicService service;
-    //轮播图展示
-    @RequestMapping("lunboshow.do")
+    private ArtService service;
+
+    //艺术家---更多艺术家展示接口
+    @RequestMapping("artists.do")
     @ResponseBody
-    public PageVo lunboshow() {
-        List<Pic> pics = service.showFor();
+    public PageVo artists() {
+        List list = service.queryartists();
         PageVo pageVo = new PageVo();
-        if (pics.size() != 0) {
-            pageVo.setData(pics);
-            pageVo.setCode(0);
-            pageVo.setMsg("查询成功");
+        if (list.size() == 0) {
+            pageVo.setMsg("当前列表为空");
+            pageVo.setCode(1);
             return pageVo;
         } else {
-            pageVo.setMsg("空空如也");
+            pageVo.setData(list);
+            pageVo.setMsg("成功");
             pageVo.setCode(1);
             return pageVo;
         }

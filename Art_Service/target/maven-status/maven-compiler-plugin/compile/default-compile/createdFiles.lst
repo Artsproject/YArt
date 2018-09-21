@@ -1,6 +1,12 @@
+com\qfedu\service\impl\ArtServiceImpl.class
 com\qfedu\service\WorkService.class
-com\qfedu\service\impl\UserServiceImpl.class
+com\qfedu\service\impl\SpecialServiceImpl.class
 com\qfedu\service\PicService.class
-com\qfedu\service\impl\PicServiceImpl.class
+com\qfedu\service\SpecialService.class
 com\qfedu\service\UserService.class
+com\qfedu\service\impl\UserServiceImpl.class
+com\qfedu\service\impl\InsightServiceImpl.class
+com\qfedu\service\impl\PicServiceImpl.class
+com\qfedu\service\InsightService.class
+com\qfedu\service\ArtService.class
 com\qfedu\service\impl\WorkServiceImpl.class

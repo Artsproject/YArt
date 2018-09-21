@@ -125,4 +125,14 @@
       picurl = #{picurl,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="queryartists" resultType="com.qfedu.common.vo.Artistsvo">
+  select a.id, a.truename, count(w.uid) as num from t_artist a
+  LEFT OUTER JOIN t_work w on a.uid = w.uid GROUP BY a.uid
+  </select>
+
+  <select id="selectByName" resultType="com.qfedu.domain.Artist">
+    select a.id, a.truename, a.picurl from t_artist a where a.truename like #{truename}
+  </select>
+
 </mapper>

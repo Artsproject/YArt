@@ -13,8 +13,6 @@ public interface WorkItemMapper {
 
     int insertSelective(WorkItem record);
 
-    WorkItem selectByPrimaryKey(Integer id);
-
     int updateByPrimaryKeySelective(WorkItem record);
 
     int updateByPrimaryKey(WorkItem record);
@@ -25,5 +23,7 @@ public interface WorkItemMapper {
     int selectCount();
 
     List<Recommendvo> queryAllarea(Recommendvo revo);
+
+    WorkItem selectByPrimaryKey(Integer id);
 
 }

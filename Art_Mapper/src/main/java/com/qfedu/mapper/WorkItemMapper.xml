@@ -21,12 +21,7 @@
     id, wid, picurl, type, maininfo, name, price, createtime, material, wide, high, deep, 
     color, shape
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from t_workitem
-    where id = #{id,jdbcType=INTEGER}
-  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from t_workitem
     where id = #{id,jdbcType=INTEGER}
@@ -199,8 +194,8 @@
 
 
   <select id="querycommend" parameterType="String" resultType="com.qfedu.common.vo.Recommendvo">
-    select u.id, a.truename, wt.picurl, wt.price, wt.name, wt.material,
-      wt.high, wt.wide, wt.createtime
+    select u.id, a.truename, wt.picurl, wt.wid, wt.price, wt.name, wt.material,
+      wt.high, wt.wide, wt.createtime, wt.type, wt.maininfo
       from t_user u
       LEFT OUTER JOIN t_artist a on u.id = a.uid
       LEFT OUTER JOIN t_work w on w.uid = u.id
@@ -215,7 +210,7 @@
   <select id="qeurylastest" resultType="com.qfedu.common.vo.Recommendvo">
 
   select u.id, a.truename, wt.picurl, wt.name, wt.material,
-      wt.high, wt.wide, wt.price, wt.createtime
+      wt.high, wt.wide, wt.price, wt.createtime, wt.type, wt.maininfo
       from t_user u
       LEFT OUTER JOIN t_artist a on u.id = a.uid
       LEFT OUTER JOIN t_work w on w.uid = u.id
@@ -241,6 +236,20 @@
         <if test="p0 != null">
           and wt.price between #{p0} and #{p1}
         </if>
+        <if test="s0 != null">
+          and wt.high BETWEEN #{s0} and #{s1}
+          or wt.wide BETWEEN #{s0} and #{s1}
+        </if>
       </where>
+  </select>
+
+
+
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_workitem
+    where id = #{id}
   </select>
 </mapper>

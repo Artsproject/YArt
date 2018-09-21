@@ -27,20 +27,33 @@ public class Recommendvo {
 
     private String createtime;
 
+    private Integer wid;
 
-    private int p0;
-    private int p1;
+    private Integer p0;
+    private Integer p1;
+    private Integer s0;
+    private Integer s1;
 
+    public void setS0(Integer s0) {
+        this.s0 = s0;
+    }
 
+    public void setS1(Integer s1) {
+        this.s1 = s1;
+    }
 
-    public void setP0(int p0) {
+    public void setP0(Integer p0) {
         this.p0 = p0;
     }
 
 
-    public void setP1(int p1) {
+    public void setP1(Integer p1) {
         this.p1 = p1;
     }
+
+
+
+
 
     public int getId() {
         return id;
@@ -144,5 +157,13 @@ public class Recommendvo {
 
     public void setFlag(int flag) {
         this.flag = flag;
+    }
+
+    public Integer getWid() {
+        return wid;
+    }
+
+    public void setWid(Integer wid) {
+        this.wid = wid;
     }
 }

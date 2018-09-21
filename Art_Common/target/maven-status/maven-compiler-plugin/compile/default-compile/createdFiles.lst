@@ -8,6 +8,7 @@ com\qfedu\common\redis\JedisUtil.class
 com\qfedu\common\redis\RedisUtil.class
 com\qfedu\common\util\FileUtil.class
 com\qfedu\common\vo\Recommendvo.class
+com\qfedu\common\vo\Artistsvo.class
 com\qfedu\common\result\R.class
 com\qfedu\common\redis\TokenTool.class
 com\qfedu\common\result\PageVo.class

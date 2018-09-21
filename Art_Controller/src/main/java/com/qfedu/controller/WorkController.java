@@ -18,6 +18,7 @@ public class WorkController {
     @Autowired
     private WorkService service;
 
+    //首页分类查看推荐作品接口
     @RequestMapping("showcommend.do")
     @ResponseBody
     public PageVo querycommend(String type) {
@@ -35,12 +36,14 @@ public class WorkController {
         }
     }
 
+    //首页查看最新作品接口
     @RequestMapping("lastest.do")
     @ResponseBody
     public PageVo<Recommendvo> queryBypage(int page, int limit) {
       return service.queryByPage(page, limit);
     }
 
+    //首页条件查询作品接口
     @RequestMapping("querygo.do")
     @ResponseBody
     public PageVo queryAllarea(Recommendvo revo) {
@@ -58,4 +61,6 @@ public class WorkController {
         }
 
     }
+
+    //作品详情展示
 }

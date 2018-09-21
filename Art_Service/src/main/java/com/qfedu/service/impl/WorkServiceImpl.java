@@ -19,6 +19,9 @@ public class WorkServiceImpl implements WorkService {
     @Override
     public List<Recommendvo> querycommend(String type) {
         List<Recommendvo> list = mapper.querycommend(type);
+        if (list != null) {
+        }
+
         return list;
     }
 
@@ -28,7 +31,16 @@ public class WorkServiceImpl implements WorkService {
         if(page > 0){
             index=(page-1)*count;
         }
-        return PageVo.createPage( mapper.qeurylastest(index, count),mapper.selectCount());
+        PageVo<Recommendvo> pageVo = PageVo.createPage(mapper.qeurylastest(index, count), mapper.selectCount());
+        if (pageVo != null) {
+            pageVo.setCode(0);
+            pageVo.setMsg("查询成功");
+            return pageVo;
+        } else {
+            pageVo.setCode(1);
+            pageVo.setMsg("查询失败");
+            return pageVo;
+        }
     }
 
     @Override

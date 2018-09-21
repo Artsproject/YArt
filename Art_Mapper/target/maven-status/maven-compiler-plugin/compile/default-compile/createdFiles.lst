@@ -9,11 +9,14 @@ com\qfedu\mapper\CartMapper.class
 com\qfedu\mapper\CollectMapper.class
 com\qfedu\mapper\ProvinceMapper.class
 com\qfedu\mapper\WorkItemMapper.class
+com\qfedu\mapper\InsightMapper.class
 com\qfedu\mapper\CityMapper.class
 com\qfedu\mapper\OrderItemMapper.class
 com\qfedu\mapper\CommentMapper.class
 com\qfedu\mapper\OrderMapper.class
 com\qfedu\mapper\PicMapper.class
 com\qfedu\mapper\ComItemMapper.class
+com\qfedu\mapper\InsightpicMapper.class
 com\qfedu\mapper\RecaddressMapper.class
 com\qfedu\mapper\ResumeMapper.class
+com\qfedu\mapper\InsightcontentMapper.class
