@@ -30,15 +30,24 @@ public class CartServiceImpl implements CartService {
     private SoldWorkService soldWorkService;
 
 
-    // TODO
+    // TODO 简化了需求接口：请求添加时，如果是独版作品才做该检查，非独版作品只提供随机版号，不需要检查。
     /**
-     * 检查相同版号的同一作品是否已存在购物车中
+     *
+     * 检查同一作品是否已存在购物车中
+     *
+     *
      * @param workId
      * @param printNo
      * @return
      */
     @Override
     public boolean checkExists(Integer workId, Integer printNo) {
+
+        // 版号信息可为空，Mapper通过动态sql查寻
+        // 版号为空，假定作品为独版
+        if (itemMapper.selectCountByWorkIdAndPrintNo(workId, printNo) > 0) {
+            return true;
+        }
         return false;
     }
 
