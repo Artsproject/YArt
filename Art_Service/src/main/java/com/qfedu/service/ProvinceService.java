@@ -14,6 +14,12 @@ public interface ProvinceService {
 
     void setPreloadInRedis(boolean preload);
 
+    /**
+     * 从redis中获取所有省市县的JSON格式字符串
+     * @return
+     */
+    String getFullFromRedis();
+
     List<Province> queryProvince();
 
     List<City> queryCityByProvinceId(Integer provinceId);

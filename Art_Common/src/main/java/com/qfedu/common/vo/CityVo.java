@@ -10,17 +10,17 @@ import java.util.List;
  */
 public class CityVo {
 
-    private Integer id;
+    private int id;
     private String no;
     private String name;
 
-    private List<County> children;
+    private List<CountyVo> children;
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -40,11 +40,11 @@ public class CityVo {
         this.name = name;
     }
 
-    public List<County> getChildren() {
+    public List<CountyVo> getChildren() {
         return children;
     }
 
-    public void setChildren(List<County> children) {
+    public void setChildren(List<CountyVo> children) {
         this.children = children;
     }
 }

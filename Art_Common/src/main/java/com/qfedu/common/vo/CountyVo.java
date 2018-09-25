@@ -1,18 +1,13 @@
 package com.qfedu.common.vo;
 
-import java.util.List;
-
 /**
  * 作者：lienzhao
- * 时间：2018/9/22 0022 11:09
+ * 时间：2018/9/25 0025 9:45
  */
-public class ProvinceVo {
-
+public class CountyVo {
     private int id;
     private String no;
     private String name;
-
-    private List<CityVo> children;
 
     public int getId() {
         return id;
@@ -36,13 +31,5 @@ public class ProvinceVo {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public List<CityVo> getChildren() {
-        return children;
-    }
-
-    public void setChildren(List<CityVo> children) {
-        this.children = children;
     }
 }

@@ -30,6 +30,7 @@ public class CartController {
     @ResponseBody
     public R cartAdd(CartItem cartItem, HttpServletRequest request) {
 
+        // TODO 这里调用用户接口获取用户ID
         boolean addOk = cartService.addItem(cartItem, 1);
 
         R r = null;

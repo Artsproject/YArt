@@ -1,8 +1,13 @@
-package com.qfedu.domain;
+package com.qfedu.common.vo;
 
 import java.util.Date;
 
-public class Recaddress {
+/**
+ * 作者：lienzhao
+ * 时间：2018/9/25 0025 11:16
+ */
+public class AddressVo {
+
     private Integer id;
 
     private String name;
@@ -10,10 +15,13 @@ public class Recaddress {
     private String tel;
 
     private Integer pid;
+    private String provinceName;
 
     private Integer cityid;
+    private String cityName;
 
     private Integer countyid;
+    private String countyName;
 
     private Date createtime;
 
@@ -21,15 +29,15 @@ public class Recaddress {
 
     private Integer uid;
 
-    public Integer getUid() {
-        return uid;
-    }
-
-    public void setUid(Integer uid) {
-        this.uid = uid;
-    }
-
     private String detail;
+
+    public String getDetail() {
+        return detail;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
 
     public Integer getId() {
         return id;
@@ -44,7 +52,7 @@ public class Recaddress {
     }
 
     public void setName(String name) {
-        this.name = name == null ? null : name.trim();
+        this.name = name;
     }
 
     public String getTel() {
@@ -52,7 +60,7 @@ public class Recaddress {
     }
 
     public void setTel(String tel) {
-        this.tel = tel == null ? null : tel.trim();
+        this.tel = tel;
     }
 
     public Integer getPid() {
@@ -63,6 +71,14 @@ public class Recaddress {
         this.pid = pid;
     }
 
+    public String getProvinceName() {
+        return provinceName;
+    }
+
+    public void setProvinceName(String provinceName) {
+        this.provinceName = provinceName;
+    }
+
     public Integer getCityid() {
         return cityid;
     }
@@ -71,12 +87,28 @@ public class Recaddress {
         this.cityid = cityid;
     }
 
+    public String getCityName() {
+        return cityName;
+    }
+
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
+    }
+
     public Integer getCountyid() {
         return countyid;
     }
 
     public void setCountyid(Integer countyid) {
         this.countyid = countyid;
+    }
+
+    public String getCountyName() {
+        return countyName;
+    }
+
+    public void setCountyName(String countyName) {
+        this.countyName = countyName;
     }
 
     public Date getCreatetime() {
@@ -95,11 +127,11 @@ public class Recaddress {
         this.ord = ord;
     }
 
-    public String getDetail() {
-        return detail;
+    public Integer getUid() {
+        return uid;
     }
 
-    public void setDetail(String detail) {
-        this.detail = detail == null ? null : detail.trim();
+    public void setUid(Integer uid) {
+        this.uid = uid;
     }
 }

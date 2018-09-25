@@ -15,16 +15,15 @@
     <collection property="children" column="id" ofType="com.qfedu.common.vo.CityVo" select="selectCity" />
   </resultMap>
 
-
   <resultMap id="cityRMap" type="com.qfedu.common.vo.CityVo">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="no" jdbcType="VARCHAR" property="no" />
     <result column="name" jdbcType="VARCHAR" property="name" />
 
-    <collection property="children" ofType="com.qfedu.domain.County" column="id" select="selectCounty" />
+    <collection property="children" ofType="com.qfedu.common.vo.CountyVo" column="id" select="selectCounty" />
   </resultMap>
 
-  <resultMap id="countyRMap" type="com.qfedu.domain.County">
+  <resultMap id="countyRMap" type="com.qfedu.common.vo.CountyVo">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="no" jdbcType="VARCHAR" property="no" />
     <result column="name" jdbcType="VARCHAR" property="name" />
@@ -34,7 +33,7 @@
   <sql id="Base_Column_List">
     id, no, name
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="select" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from t_province

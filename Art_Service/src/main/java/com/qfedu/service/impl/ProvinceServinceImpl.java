@@ -1,5 +1,6 @@
 package com.qfedu.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.qfedu.common.redis.RedisUtil;
 import com.qfedu.common.vo.ProvinceVo;
 import com.qfedu.domain.City;
@@ -34,8 +35,9 @@ public class ProvinceServinceImpl implements ProvinceService {
     @Autowired
     private RedisUtil redisUtil;
 
-    private volatile Boolean preloaded;
+    private Boolean preloaded;
 
+    // TODO 在应用启动时（APPListener）将省市县全部数据预加载到redis中存储
     @Override
     public void setPreloadInRedis(boolean preload) {
 
@@ -45,10 +47,24 @@ public class ProvinceServinceImpl implements ProvinceService {
                 preloaded = preload;
 
                 List<ProvinceVo> provinceVos = provinceMapper.selectFull();
-                System.out.println("----preloadInRedis");
+
+                boolean setOk = redisUtil.set("provinceFull", JSON.toJSONString(provinceVos));
             }
         }
     }
+
+    // TODO 从redis中获取省市县全部数据的JSON格式字符串
+    @Override
+    public String getFullFromRedis() {
+
+        String jsonStr = "";
+        if (preloaded.booleanValue() && redisUtil.hasKey("provinceFull")) {
+            jsonStr = (String) redisUtil.get("provinceFull");
+        }
+
+        return jsonStr;
+    }
+
 
     @Override
     public List<Province> queryProvince() {
