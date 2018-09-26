@@ -12,6 +12,13 @@ import java.util.List;
  */
 public interface CartService {
 
+    /**
+     *
+     * 检查同一作品是否已存在购物车中
+     * @param workId
+     * @param printNo
+     * @return
+     */
     boolean checkExists(Integer workId, Integer printNo);
 
     Cart queryCartByUid(Integer uid);

@@ -10,73 +10,11 @@
   <sql id="Base_Column_List">
     id, no, name, pid
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="selectByProvinceId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from t_city
-    where id = #{id,jdbcType=INTEGER}
+    where pid = #{provinceId,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from t_city
-    where id = #{id,jdbcType=INTEGER}
-  </delete>
-  <insert id="insert" parameterType="com.qfedu.domain.City">
-    insert into t_city (id, no, name, 
-      pid)
-    values (#{id,jdbcType=INTEGER}, #{no,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
-      #{pid,jdbcType=INTEGER})
-  </insert>
-  <insert id="insertSelective" parameterType="com.qfedu.domain.City">
-    insert into t_city
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
-      </if>
-      <if test="no != null">
-        no,
-      </if>
-      <if test="name != null">
-        name,
-      </if>
-      <if test="pid != null">
-        pid,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=INTEGER},
-      </if>
-      <if test="no != null">
-        #{no,jdbcType=VARCHAR},
-      </if>
-      <if test="name != null">
-        #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="pid != null">
-        #{pid,jdbcType=INTEGER},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.qfedu.domain.City">
-    update t_city
-    <set>
-      <if test="no != null">
-        no = #{no,jdbcType=VARCHAR},
-      </if>
-      <if test="name != null">
-        name = #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="pid != null">
-        pid = #{pid,jdbcType=INTEGER},
-      </if>
-    </set>
-    where id = #{id,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.qfedu.domain.City">
-    update t_city
-    set no = #{no,jdbcType=VARCHAR},
-      name = #{name,jdbcType=VARCHAR},
-      pid = #{pid,jdbcType=INTEGER}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
+
 </mapper>

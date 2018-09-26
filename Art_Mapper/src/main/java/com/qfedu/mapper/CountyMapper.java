@@ -2,16 +2,10 @@ package com.qfedu.mapper;
 
 import com.qfedu.domain.County;
 
+import java.util.List;
+
 public interface CountyMapper {
-    int deleteByPrimaryKey(Integer id);
 
-    int insert(County record);
+    List<County> selectByCityId(Integer cityId);
 
-    int insertSelective(County record);
-
-    County selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(County record);
-
-    int updateByPrimaryKey(County record);
 }

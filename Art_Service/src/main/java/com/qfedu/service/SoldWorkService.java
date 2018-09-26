@@ -22,9 +22,9 @@ public interface SoldWorkService {
     Integer[] querySoldByWorkId(Integer workId);
 
     /**
-     * 随机获取一个可售版号
-     * 查询总版数，在未售版号中随机选择一个版号
-     * @return
+     * “随机”获取一个可售版号
+     * @param workId
+     * @return 如果是多版，返回大于0的整数，如果是独版，返回0
      */
     int randomGetByWorkId(Integer workId);
 

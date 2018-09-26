@@ -10,16 +10,37 @@
     <result column="countyid" jdbcType="INTEGER" property="countyid" />
     <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
     <result column="ord" jdbcType="INTEGER" property="ord" />
+    <result column="uid" jdbcType="INTEGER" property="uid" />
   </resultMap>
   <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.qfedu.domain.Recaddress">
     <result column="detail" jdbcType="LONGVARCHAR" property="detail" />
   </resultMap>
+
+  <resultMap id="addressVoRMap" type="com.qfedu.common.vo.AddressVo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="cityid" jdbcType="INTEGER" property="cityid" />
+    <result column="countyid" jdbcType="INTEGER" property="countyid" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="ord" jdbcType="INTEGER" property="ord" />
+    <result column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="detail" jdbcType="LONGVARCHAR" property="detail" />
+    <result column="province_name" property="provinceName" jdbcType="VARCHAR"/>
+    <result column="city_name" property="cityName" jdbcType="VARCHAR"/>
+    <result column="county_name" property="countyName" jdbcType="VARCHAR"/>
+  </resultMap>
+
+
+
   <sql id="Base_Column_List">
-    id, name, tel, pid, cityid, countyid, createtime, ord
+    id, name, tel, pid, cityid, countyid, createtime, ord, uid
   </sql>
   <sql id="Blob_Column_List">
     detail
   </sql>
+
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
     select 
     <include refid="Base_Column_List" />
@@ -28,123 +49,44 @@
     from t_recaddress
     where id = #{id,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+
+  <select id="selectByUserId" parameterType="java.lang.Integer" resultMap="addressVoRMap">
+    SELECT
+    r.id, r.name, r.tel, r.pid, r.cityid, r.countyid, r.createtime, r.ord, r.uid, r.detail,
+    p.name province_name, ci.name city_name, co.name county_name
+    FROM t_recaddress r
+    LEFT JOIN t_province p ON r.pid = p.id
+    LEFT JOIN t_city ci ON r.cityid = ci.id
+    LEFT JOIN t_county co ON r.countyid = co.id
+    WHERE uid = #{userId,jdbcType=INTEGER} ORDER BY ord
+  </select>
+
+  <update id="updateOrdByPrimaryKey">
+    UPDATE t_recaddress SET ord = #{ord} WHERE id = #{id}
+  </update>
+
+  <select id="selectDefaultIdByUid" resultType="java.lang.Integer">
+    SELECT id FROM t_recaddress WHERE uid=#{uid} and ord = 1
+  </select>
+
+  <delete id="deleteByIdAndUid" parameterType="java.lang.Integer">
     delete from t_recaddress
-    where id = #{id,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER} and uid=#{uid}
   </delete>
-  <insert id="insert" parameterType="com.qfedu.domain.Recaddress">
-    insert into t_recaddress (id, name, tel, 
+
+  <insert id="insert" parameterType="com.qfedu.domain.Recaddress" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+    insert into t_recaddress (name, tel,
       pid, cityid, countyid, 
-      createtime, ord, detail
+      createtime, ord, detail, uid
       )
-    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{tel,jdbcType=VARCHAR}, 
+    values (#{name,jdbcType=VARCHAR}, #{tel,jdbcType=VARCHAR},
       #{pid,jdbcType=INTEGER}, #{cityid,jdbcType=INTEGER}, #{countyid,jdbcType=INTEGER}, 
-      #{createtime,jdbcType=TIMESTAMP}, #{ord,jdbcType=INTEGER}, #{detail,jdbcType=LONGVARCHAR}
+      now(), #{ord,jdbcType=INTEGER}, #{detail,jdbcType=LONGVARCHAR},
+      #{uid, jdbcType=INTEGER}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.qfedu.domain.Recaddress">
-    insert into t_recaddress
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
-      </if>
-      <if test="name != null">
-        name,
-      </if>
-      <if test="tel != null">
-        tel,
-      </if>
-      <if test="pid != null">
-        pid,
-      </if>
-      <if test="cityid != null">
-        cityid,
-      </if>
-      <if test="countyid != null">
-        countyid,
-      </if>
-      <if test="createtime != null">
-        createtime,
-      </if>
-      <if test="ord != null">
-        ord,
-      </if>
-      <if test="detail != null">
-        detail,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=INTEGER},
-      </if>
-      <if test="name != null">
-        #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="tel != null">
-        #{tel,jdbcType=VARCHAR},
-      </if>
-      <if test="pid != null">
-        #{pid,jdbcType=INTEGER},
-      </if>
-      <if test="cityid != null">
-        #{cityid,jdbcType=INTEGER},
-      </if>
-      <if test="countyid != null">
-        #{countyid,jdbcType=INTEGER},
-      </if>
-      <if test="createtime != null">
-        #{createtime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="ord != null">
-        #{ord,jdbcType=INTEGER},
-      </if>
-      <if test="detail != null">
-        #{detail,jdbcType=LONGVARCHAR},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.qfedu.domain.Recaddress">
-    update t_recaddress
-    <set>
-      <if test="name != null">
-        name = #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="tel != null">
-        tel = #{tel,jdbcType=VARCHAR},
-      </if>
-      <if test="pid != null">
-        pid = #{pid,jdbcType=INTEGER},
-      </if>
-      <if test="cityid != null">
-        cityid = #{cityid,jdbcType=INTEGER},
-      </if>
-      <if test="countyid != null">
-        countyid = #{countyid,jdbcType=INTEGER},
-      </if>
-      <if test="createtime != null">
-        createtime = #{createtime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="ord != null">
-        ord = #{ord,jdbcType=INTEGER},
-      </if>
-      <if test="detail != null">
-        detail = #{detail,jdbcType=LONGVARCHAR},
-      </if>
-    </set>
-    where id = #{id,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.qfedu.domain.Recaddress">
-    update t_recaddress
-    set name = #{name,jdbcType=VARCHAR},
-      tel = #{tel,jdbcType=VARCHAR},
-      pid = #{pid,jdbcType=INTEGER},
-      cityid = #{cityid,jdbcType=INTEGER},
-      countyid = #{countyid,jdbcType=INTEGER},
-      createtime = #{createtime,jdbcType=TIMESTAMP},
-      ord = #{ord,jdbcType=INTEGER},
-      detail = #{detail,jdbcType=LONGVARCHAR}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
+
+
   <update id="updateByPrimaryKey" parameterType="com.qfedu.domain.Recaddress">
     update t_recaddress
     set name = #{name,jdbcType=VARCHAR},
@@ -152,8 +94,9 @@
       pid = #{pid,jdbcType=INTEGER},
       cityid = #{cityid,jdbcType=INTEGER},
       countyid = #{countyid,jdbcType=INTEGER},
-      createtime = #{createtime,jdbcType=TIMESTAMP},
-      ord = #{ord,jdbcType=INTEGER}
+      ord = #{ord,jdbcType=INTEGER},
+      detail = #{detail,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
 </mapper>

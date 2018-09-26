@@ -1,17 +1,14 @@
 package com.qfedu.mapper;
 
+import com.qfedu.common.vo.CityVo;
+import com.qfedu.common.vo.ProvinceVo;
 import com.qfedu.domain.Province;
 
+import java.util.List;
+
 public interface ProvinceMapper {
-    int deleteByPrimaryKey(Integer id);
 
-    int insert(Province record);
+    List<Province> select();
 
-    int insertSelective(Province record);
-
-    Province selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(Province record);
-
-    int updateByPrimaryKey(Province record);
+    List<ProvinceVo> selectFull();
 }

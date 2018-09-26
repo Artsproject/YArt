@@ -6,64 +6,54 @@
     <result column="no" jdbcType="VARCHAR" property="no" />
     <result column="name" jdbcType="VARCHAR" property="name" />
   </resultMap>
+
+  <resultMap id="provinceRMap" type="com.qfedu.common.vo.ProvinceVo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="no" jdbcType="VARCHAR" property="no" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+
+    <collection property="children" column="id" ofType="com.qfedu.common.vo.CityVo" select="selectCity" />
+  </resultMap>
+
+  <resultMap id="cityRMap" type="com.qfedu.common.vo.CityVo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="no" jdbcType="VARCHAR" property="no" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+
+    <collection property="children" ofType="com.qfedu.common.vo.CountyVo" column="id" select="selectCounty" />
+  </resultMap>
+
+  <resultMap id="countyRMap" type="com.qfedu.common.vo.CountyVo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="no" jdbcType="VARCHAR" property="no" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+
+
   <sql id="Base_Column_List">
     id, no, name
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="select" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from t_province
-    where id = #{id,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from t_province
-    where id = #{id,jdbcType=INTEGER}
-  </delete>
-  <insert id="insert" parameterType="com.qfedu.domain.Province">
-    insert into t_province (id, no, name)
-    values (#{id,jdbcType=INTEGER}, #{no,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR})
-  </insert>
-  <insert id="insertSelective" parameterType="com.qfedu.domain.Province">
-    insert into t_province
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
-      </if>
-      <if test="no != null">
-        no,
-      </if>
-      <if test="name != null">
-        name,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=INTEGER},
-      </if>
-      <if test="no != null">
-        #{no,jdbcType=VARCHAR},
-      </if>
-      <if test="name != null">
-        #{name,jdbcType=VARCHAR},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.qfedu.domain.Province">
-    update t_province
-    <set>
-      <if test="no != null">
-        no = #{no,jdbcType=VARCHAR},
-      </if>
-      <if test="name != null">
-        name = #{name,jdbcType=VARCHAR},
-      </if>
-    </set>
-    where id = #{id,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.qfedu.domain.Province">
-    update t_province
-    set no = #{no,jdbcType=VARCHAR},
-      name = #{name,jdbcType=VARCHAR}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
+
+  <select id="selectFull" parameterType="java.lang.Integer" resultMap="provinceRMap">
+    SELECT id, `no`, `name`
+    FROM t_province
+  </select>
+
+  <select id="selectCity" parameterType="int" resultMap="cityRMap">
+    SELECT id, `no`, `name`
+    FROM t_city
+    WHERE pid = #{provinceId,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectCounty" parameterType="java.lang.Integer" resultMap="countyRMap">
+    select id, `no`, `name`
+    from t_county
+    where cityid = #{cityId,jdbcType=INTEGER}
+  </select>
+
 </mapper>

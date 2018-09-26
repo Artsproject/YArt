@@ -9,9 +9,11 @@
   </delete>
 
   <select id="selectCountByWorkIdAndPrintNo" resultType="int">
-    SELECT
+    SELECT COUNT(*) FROM t_cartitem WHERE wid=#{workId}
+    <if test="printNo != null">
+      AND print_no=#{printNo}
+    </if>
   </select>
-
 
   <insert id="insert" parameterType="com.qfedu.domain.CartItem" useGeneratedKeys="true">
     insert into t_cartitem (cid, wid, createtime, print_no,
