@@ -31,6 +31,8 @@ public class WorkItem {
 
     private Integer shape;
 
+    private Integer print_count;
+
     public Integer getId() {
         return id;
     }
@@ -141,5 +143,13 @@ public class WorkItem {
 
     public void setShape(Integer shape) {
         this.shape = shape;
+    }
+
+    public Integer getPrint_count() {
+        return print_count;
+    }
+
+    public void setPrint_count(Integer print_count) {
+        this.print_count = print_count;
     }
 }

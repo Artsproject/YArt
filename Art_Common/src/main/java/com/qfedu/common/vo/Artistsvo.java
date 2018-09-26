@@ -6,7 +6,6 @@ public class Artistsvo {
 
     private String truename;
 
-
     private int num;
 
     public int getId() {

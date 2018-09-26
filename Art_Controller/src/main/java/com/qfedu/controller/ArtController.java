@@ -1,6 +1,8 @@
 package com.qfedu.controller;
 
 import com.qfedu.common.result.PageVo;
+import com.qfedu.common.result.R;
+import com.qfedu.domain.Analyse;
 import com.qfedu.service.ArtService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,6 +31,18 @@ public class ArtController {
             pageVo.setMsg("成功");
             pageVo.setCode(1);
             return pageVo;
+        }
+    }
+    //推荐作品艺术评析接口
+    @RequestMapping("analyse.do")
+    @ResponseBody
+    public R analyse(int wid) {
+        Analyse analyse = service.selectBywid(wid);
+        System.out.println(analyse);
+        if (analyse != null) {
+          return new R(0,"成功",analyse);
+        } else {
+            return new R(1,"失败",null);
         }
     }
 }
