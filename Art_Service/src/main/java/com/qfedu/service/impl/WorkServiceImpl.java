@@ -1,15 +1,15 @@
 package com.qfedu.service.impl;
 
+import com.alibaba.fastjson.JSON;
+import com.qfedu.common.redis.JedisUtil;
 import com.qfedu.common.result.PageVo;
 import com.qfedu.common.result.R;
-import com.qfedu.common.vo.Analysevo;
+import com.qfedu.common.util.EncrypUtil;
 import com.qfedu.common.vo.ArtistWorkvo;
 import com.qfedu.common.vo.Recommendvo;
 import com.qfedu.common.vo.WorkItemvo;
-import com.qfedu.domain.WorkItem;
-import com.qfedu.mapper.AnalyseMapper;
+
 import com.qfedu.mapper.WorkItemMapper;
-import com.qfedu.mapper.WorkMapper;
 import com.qfedu.service.WorkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,9 +21,20 @@ public class WorkServiceImpl implements WorkService {
     @Autowired
     private WorkItemMapper mapper;
 
+    @Autowired
+    private JedisUtil util;
+
     @Override
     public List<Recommendvo> querycommend(String type) {
+
         List<Recommendvo> list = mapper.querycommend(type);
+        if (list != null) {
+
+            String token = EncrypUtil.md5Pass(list.toString());
+            System.out.println(token);
+            util.addStr(token,JSON.toJSONString(list));
+            System.out.println("123");
+        }
 
         return list;
     }
