@@ -9,9 +9,9 @@ public interface CartMapper {
 
     Cart selectByUid(Integer uid);
 
-    List<CartItemVo> selectItemsByArtistUid(Integer uid);
+    List<CartItemVo> selectItemsByUid(Integer uid);
 
-    CartItemVo selectItemByItemId(Integer id);
+    List<CartItemVo> selectByItemIds(Integer[] ids);
 
     int deleteByPrimaryKey(Integer id);
 

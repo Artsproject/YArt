@@ -52,7 +52,7 @@ public class CartController {
         user.setId(1);
 
         if (user != null) {
-            List<CartItemVo> itemVos = cartService.queryItemsByArtistUid(user.getId());
+            List<CartItemVo> itemVos = cartService.queryItemsByUid(user.getId());
 
             R r = R.setOK();
             r.setData(itemVos);
@@ -63,6 +63,7 @@ public class CartController {
         return R.setERROR();
     }
 
+    // TODO CRUD 操作是否需要提供登录用户的ID？安全操作
     @RequestMapping("cartdel.do")
     @ResponseBody
     public R cartItemDelete(Integer itemId) {
@@ -74,5 +75,11 @@ public class CartController {
         return R.setERROR();
     }
 
+    @RequestMapping("cartcheck.do")
+    @ResponseBody
+    public R cartCheck(Integer workId, Integer printNo) {
+        R r = cartService.checkExists(workId, printNo);
+        return r;
+    }
 
 }

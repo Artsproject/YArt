@@ -9,9 +9,9 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface SoldWorkMapper {
 
-    Integer[] selectPrintNosByWorkId(Integer workId);
+    Integer[] selectPrintNosByWorkIdAndFlag(@Param("workId") Integer workId, @Param("flag") Integer flag);
 
-    int insert(@Param("workId") Integer workId, @Param("printNo") Integer printNo);
+    int updateFlag(@Param("workId") Integer workId, @Param("printNo") Integer printNo, @Param("flag") Integer flag);
 
     int selectPrintCountByWorkId(Integer workId);
 
