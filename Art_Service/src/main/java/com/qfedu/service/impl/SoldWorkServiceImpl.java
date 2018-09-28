@@ -29,41 +29,38 @@ public class SoldWorkServiceImpl implements SoldWorkService {
     @Override
     public Integer[] querySoldByWorkId(Integer workId) {
 
-        Integer[] nos = soldWorkMapper.selectPrintNosByWorkId(workId);
-
-        System.out.println(Arrays.asList(nos));
+        Integer[] nos = soldWorkMapper.selectPrintNosByWorkIdAndFlag(workId, 1);
 
         return nos;
+    }
+
+    @Override
+    public Integer[] queryOnSailByWorkId(Integer workId) {
+        return soldWorkMapper.selectPrintNosByWorkIdAndFlag(workId, 0);
     }
 
 
     /**
      * “随机”获取一个可售版号
      * @param workId
-     * @return 如果是多版，返回大于0的整数，如果是独版，返回0
+     * @return 如果没有可售作品，返回null；返回0，表示独版作品版号；返回大于0的整数，表示多版作品版号
      */
     @Override
-    public int randomGetByWorkId(Integer workId) {
+    public Integer randomGetByWorkId(Integer workId) {
 
-        Integer[] soldNos = soldWorkMapper.selectPrintNosByWorkId(workId);
+        // flag=0，代表查询未售作品
+        // 对于独版作品，数据表t_sortwork保存的作品版号是0（printNo=0）,如果未售，将返回一个元素（0）的Integer数组
+        Integer[] onsales = soldWorkMapper.selectPrintNosByWorkIdAndFlag(workId, 0);
 
-        int count = soldWorkMapper.selectPrintCountByWorkId(workId);
-
-        // 版数大于1表示多版
-        if (count > 1) {
-            List<Integer> integerList = Arrays.asList(soldNos);
-
-            for (int i = 1; i <= count; i++) {
-                if (!integerList.contains(i)) {
-                    return i;
-                }
-            }
+        if (onsales != null && onsales.length > 0) {
+            return onsales[0];
         }
-        return 0;
+
+        return null;
     }
 
     @Override
-    public boolean addOneSold(Integer workId, Integer printNo) {
-        return soldWorkMapper.insert(workId, printNo) > 0;
+    public boolean setOneSold(Integer workId, Integer printNo) {
+        return soldWorkMapper.updateFlag(workId, printNo, 1) > 0;
     }
 }

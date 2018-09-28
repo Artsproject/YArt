@@ -1,5 +1,6 @@
 package com.qfedu.service;
 
+import com.qfedu.common.result.R;
 import com.qfedu.common.vo.CartItemVo;
 import com.qfedu.domain.Cart;
 import com.qfedu.domain.CartItem;
@@ -19,11 +20,13 @@ public interface CartService {
      * @param printNo
      * @return
      */
-    boolean checkExists(Integer workId, Integer printNo);
+    R checkExists(Integer workId, Integer printNo);
 
     Cart queryCartByUid(Integer uid);
 
-    List<CartItemVo> queryItemsByArtistUid(Integer uid);
+    List<CartItemVo> queryItemsByUid(Integer uid);
+
+    List<CartItemVo> queryItemsByItemIds(Integer[] ids);
 
     boolean addItem(CartItem cartItem, Integer uid);
 

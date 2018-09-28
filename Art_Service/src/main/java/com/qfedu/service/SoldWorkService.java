@@ -21,19 +21,21 @@ public interface SoldWorkService {
 
     Integer[] querySoldByWorkId(Integer workId);
 
+    Integer[] queryOnSailByWorkId(Integer workId);
+
     /**
      * “随机”获取一个可售版号
      * @param workId
      * @return 如果是多版，返回大于0的整数，如果是独版，返回0
      */
-    int randomGetByWorkId(Integer workId);
+    Integer randomGetByWorkId(Integer workId);
 
     /**
-     * 添加一条数据，在支付成功后执行
+     * 更新一条数据（更新flag=1表示已售），在支付成功后执行
      * @param workId
      * @param printNo
      * @return
      */
-    boolean addOneSold(Integer workId, Integer printNo);
+    boolean setOneSold(Integer workId, Integer printNo);
 
 }

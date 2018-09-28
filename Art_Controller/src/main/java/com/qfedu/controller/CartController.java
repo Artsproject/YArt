@@ -1,6 +1,9 @@
 package com.qfedu.controller;
 
 
+import com.alibaba.fastjson.JSON;
+import com.qfedu.common.redis.RedisUtil;
+import com.qfedu.common.redis.TokenTool;
 import com.qfedu.common.result.R;
 import com.qfedu.common.vo.CartItemVo;
 import com.qfedu.domain.CartItem;
@@ -26,6 +29,9 @@ public class CartController {
     @Autowired
     private CartService cartService;
 
+    @Autowired
+    private RedisUtil redisUtil;
+
     @RequestMapping("cartadd.do")
     @ResponseBody
     public R cartAdd(CartItem cartItem, HttpServletRequest request) {
@@ -47,14 +53,26 @@ public class CartController {
     @RequestMapping(value = "cartitems.do", method = RequestMethod.GET)
     @ResponseBody
     public R cartItems(HttpServletRequest request) {
-        // TODO 这里调用用户接口获取用户ID
+
+        R r = null;
+        // TODO 单点登录下获取登录用户信息
+/*        String token = TokenTool.getToken(request);
+        if (!redisUtil.hasKey(token)) {
+            r = R.setERROR();
+            r.setMsg("未登录");
+            return r;
+        }
+
+        User user = JSON.parseObject((String) redisUtil.get(token), User.class);;*/
+
+        // TODO 测试阶段代码
         User user = new User();
         user.setId(1);
 
         if (user != null) {
-            List<CartItemVo> itemVos = cartService.queryItemsByArtistUid(user.getId());
+            List<CartItemVo> itemVos = cartService.queryItemsByUid(user.getId());
 
-            R r = R.setOK();
+            r = R.setOK();
             r.setData(itemVos);
 
             return r;
@@ -63,6 +81,7 @@ public class CartController {
         return R.setERROR();
     }
 
+    // TODO CRUD 操作是否需要提供登录用户的ID？安全操作
     @RequestMapping("cartdel.do")
     @ResponseBody
     public R cartItemDelete(Integer itemId) {
@@ -74,5 +93,11 @@ public class CartController {
         return R.setERROR();
     }
 
+    @RequestMapping("cartcheck.do")
+    @ResponseBody
+    public R cartCheck(Integer workId, Integer printNo) {
+        R r = cartService.checkExists(workId, printNo);
+        return r;
+    }
 
 }

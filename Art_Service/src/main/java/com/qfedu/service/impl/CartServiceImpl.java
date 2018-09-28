@@ -1,5 +1,6 @@
 package com.qfedu.service.impl;
 
+import com.qfedu.common.result.R;
 import com.qfedu.common.vo.CartItemVo;
 import com.qfedu.domain.Cart;
 import com.qfedu.domain.CartItem;
@@ -30,25 +31,35 @@ public class CartServiceImpl implements CartService {
     private SoldWorkService soldWorkService;
 
 
-    // TODO 简化了需求接口：请求添加时，如果是独版作品才做该检查，非独版作品只提供随机版号，不需要检查。
     /**
      *
      * 检查同一作品是否已存在购物车中
      *
+     * 需要参数作品ID和版号NO，如果是独版，printNo可为null或0
      *
      * @param workId
      * @param printNo
      * @return
      */
     @Override
-    public boolean checkExists(Integer workId, Integer printNo) {
+    public R checkExists(Integer workId, Integer printNo) {
 
-        // 版号信息可为空，Mapper通过动态sql查寻
-        // 版号为空，假定作品为独版
-        if (itemMapper.selectCountByWorkIdAndPrintNo(workId, printNo) > 0) {
-            return true;
+        if (printNo == null || printNo == 0) {
+            if (soldWorkService.getPrintCountByWorkId(workId) > 1) {
+                R r = R.setERROR();
+                r.setMsg("作品为多版，需要提供版号。");
+                return r;
+            }
+            printNo = 0;
         }
-        return false;
+
+        if (itemMapper.selectCountByWorkIdAndPrintNo(workId, printNo) > 0) {
+            R r = R.setERROR();
+            r.setMsg("作品已经存在购物车中");
+            return r;
+        }
+
+        return R.setOK();
     }
 
     /**
@@ -68,11 +79,16 @@ public class CartServiceImpl implements CartService {
      * @return
      */
     @Override
-    public List<CartItemVo> queryItemsByArtistUid(Integer uid) {
+    public List<CartItemVo> queryItemsByUid(Integer uid) {
 
-        List<CartItemVo> itemVos = cartMapper.selectItemsByArtistUid(uid);
+        List<CartItemVo> itemVos = cartMapper.selectItemsByUid(uid);
 
         return itemVos;
+    }
+
+    @Override
+    public List<CartItemVo> queryItemsByItemIds(Integer[] ids) {
+        return cartMapper.selectByItemIds(ids);
     }
 
     /**
@@ -94,13 +110,10 @@ public class CartServiceImpl implements CartService {
         }
 
 
-        // 确认版号，如果没有提供版号，则随机获取一个版号
+        // 确认版号，如果没有提供版号，默认为独版作品，设printNo=0
+        // 添加作品前需要进行checkExists检查
         if (cartItem.getPrintNo() == null) {
-
-            // 方法返回可能是0或大于0的整数，等于0表是独版
-            int printNo = soldWorkService.randomGetByWorkId(cartItem.getWid());
-
-            cartItem.setPrintNo(printNo);
+            cartItem.setPrintNo(0);
         }
 
         int row = itemMapper.insert(cartItem);

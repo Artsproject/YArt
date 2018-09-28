@@ -7,11 +7,11 @@ import java.util.Date;
 
 /**
  * 作者：lienzhao
- * 时间：2018/9/19 0019
+ * 时间：2018/9/26 0026 20:11
  */
-public class CartItemVo {
+public class OrderItemVo {
 
-    private Integer cartItemId;
+    private Integer orderItemId;
 
     private WorkItem workItem;
     private Artist artist;
@@ -23,16 +23,36 @@ public class CartItemVo {
     private String cardType;//卡纸类型
     private Integer printNo;//版号
 
-    public CartItemVo() {
+    public Integer getOrderItemId() {
+        return orderItemId;
     }
 
-
-    public Integer getCartItemId() {
-        return cartItemId;
+    public void setOrderItemId(Integer orderItemId) {
+        this.orderItemId = orderItemId;
     }
 
-    public void setCartItemId(Integer cartItemId) {
-        this.cartItemId = cartItemId;
+    public WorkItem getWorkItem() {
+        return workItem;
+    }
+
+    public void setWorkItem(WorkItem workItem) {
+        this.workItem = workItem;
+    }
+
+    public Artist getArtist() {
+        return artist;
+    }
+
+    public void setArtist(Artist artist) {
+        this.artist = artist;
+    }
+
+    public Date getCreatedate() {
+        return createdate;
+    }
+
+    public void setCreatedate(Date createdate) {
+        this.createdate = createdate;
     }
 
     public Integer getFramePrice() {
@@ -74,29 +94,6 @@ public class CartItemVo {
     public void setPrintNo(Integer printNo) {
         this.printNo = printNo;
     }
-
-    public WorkItem getWorkItem() {
-        return workItem;
-    }
-
-    public void setWorkItem(WorkItem workItem) {
-        this.workItem = workItem;
-    }
-
-    public Artist getArtist() {
-        return artist;
-    }
-
-    public void setArtist(Artist artist) {
-        this.artist = artist;
-    }
-
-    public Date getCreatedate() {
-        return createdate;
-    }
-
-    public void setCreatedate(Date createdate) {
-        this.createdate = createdate;
-    }
-
 }
+
+
