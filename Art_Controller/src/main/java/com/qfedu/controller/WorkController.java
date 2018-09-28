@@ -2,15 +2,17 @@ package com.qfedu.controller;
 
 import com.qfedu.common.result.PageVo;
 import com.qfedu.common.result.R;
+import com.qfedu.common.vo.Analysevo;
+import com.qfedu.common.vo.ArtistWorkvo;
 import com.qfedu.common.vo.Recommendvo;
+import com.qfedu.common.vo.WorkItemvo;
 import com.qfedu.service.WorkService;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
@@ -21,8 +23,9 @@ public class WorkController {
     //首页分类查看推荐作品接口
     @RequestMapping("showcommend.do")
     @ResponseBody
-    public PageVo querycommend(String type) {
+    public PageVo querycommend(String type, HttpServletRequest request) {
         List<Recommendvo> list = service.querycommend(type);
+        request.setAttribute("recommend",list);
         PageVo pageVo = new PageVo();
         if (list.size() != 0) {
             pageVo.setCode(0);
@@ -62,5 +65,29 @@ public class WorkController {
 
     }
 
-    //作品详情展示
+    //推荐作品详情展示
+    @RequestMapping("recommenddetail.do")
+    @ResponseBody
+    public R commenddetail(int wid) {
+        WorkItemvo item = service.selectByWid(wid);
+        if (item != null) {
+            return new R(0,"成功",item);
+        } else {
+            return new R(1,"失败",null);
+        }
+    }
+
+    //推荐作品相关艺术家展示接口
+    @RequestMapping("artistdetail.do")
+    @ResponseBody
+    public R artistdetail(int id) {
+        ArtistWorkvo avo = service.selectArtworkByWid(id);
+        if (avo != null) {
+            return new R(0,"成功",avo);
+        } else {
+            return new R(1,"失败",null);
+        }
+    }
+
+
 }

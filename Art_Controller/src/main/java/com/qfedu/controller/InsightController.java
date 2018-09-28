@@ -23,13 +23,12 @@ public class InsightController {
         if (list.size() == 0) {
             pageVo.setCode(1);
             pageVo.setMsg("当前列表为空");
-            return pageVo;
         } else {
             pageVo.setData(list);
             pageVo.setCode(0);
             pageVo.setMsg("成功");
-            return pageVo;
         }
+        return pageVo;
     }
 
     @RequestMapping("insightdetail.do")
@@ -40,12 +39,11 @@ public class InsightController {
         if (list.size() == 0) {
             pageVo.setCode(1);
             pageVo.setMsg("当前列表为空");
-            return pageVo;
         } else {
             pageVo.setData(list);
             pageVo.setCode(0);
             pageVo.setMsg("成功");
-            return pageVo;
         }
+        return pageVo;
     }
 }

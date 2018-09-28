@@ -16,10 +16,11 @@
     <result column="deep" jdbcType="INTEGER" property="deep" />
     <result column="color" jdbcType="INTEGER" property="color" />
     <result column="shape" jdbcType="INTEGER" property="shape" />
+    <result column="print_count" jdbcType="INTEGER" property="print_count" />
   </resultMap>
   <sql id="Base_Column_List">
     id, wid, picurl, type, maininfo, name, price, createtime, material, wide, high, deep, 
-    color, shape
+    color, shape, print_count
   </sql>
 
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
@@ -243,13 +244,24 @@
       </where>
   </select>
 
-
-
-
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select
-    <include refid="Base_Column_List" />
-    from t_workitem
-    where id = #{id}
+  <select id="selectByWid" parameterType="java.lang.Integer" resultType="com.qfedu.common.vo.WorkItemvo">
+   select wt.id, wt.wid, wt.picurl, wt.price, wt.print_count, COUNT(c.uid) as likes, w.id as workid from          t_workitem wt
+      LEFT OUTER JOIN t_work w on w.id = wt.wid
+      LEFT OUTER JOIN t_collect c on c.wid = w.id
+      where w.id = #{id}
   </select>
+
+  <select id="selectUidByWorkid" resultType="int">
+    select w.uid from t_work w where w.id = #{id}
+  </select>
+
+  <select id="selectArtworkByWid" parameterType="java.lang.Integer" resultType="com.qfedu.common.vo.ArtistWorkvo">
+    select a.id, a.picurl, a.truename, COUNT(w.uid) as works,
+      wt.name, wt.material, wt.maininfo, wt.type, wt.high,
+      wt.wide, wt.createtime from t_work w
+      LEFT OUTER JOIN  t_artist a on w.uid = a.uid
+      LEFT OUTER JOIN t_workitem wt on wt.wid = w.id  where w.uid = #{uid}
+  </select>
+
+
 </mapper>

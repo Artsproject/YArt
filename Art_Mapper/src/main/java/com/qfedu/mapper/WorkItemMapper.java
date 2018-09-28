@@ -1,6 +1,9 @@
 package com.qfedu.mapper;
 
+import com.qfedu.common.vo.Analysevo;
+import com.qfedu.common.vo.ArtistWorkvo;
 import com.qfedu.common.vo.Recommendvo;
+import com.qfedu.common.vo.WorkItemvo;
 import com.qfedu.domain.WorkItem;
 import org.apache.ibatis.annotations.Param;
 
@@ -24,6 +27,11 @@ public interface WorkItemMapper {
 
     List<Recommendvo> queryAllarea(Recommendvo revo);
 
-    WorkItem selectByPrimaryKey(Integer id);
+    WorkItemvo selectByWid(Integer id);
+
+    int selectUidByWorkid(Integer id);
+
+
+    ArtistWorkvo selectArtworkByWid(Integer uid);
 
 }
