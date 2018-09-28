@@ -2,6 +2,7 @@ package com.qfedu.common.vo;
 
 import com.qfedu.domain.Cart;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -20,12 +21,31 @@ public class OrderVo<T> {
     // 艺网码优惠
     // 优惠券
 
+    private Date createtime;
+
+    private Integer flag;
 
     private List<T> items;
 
     public OrderVo() {
     }
 
+
+    public Date getCreatetime() {
+        return createtime;
+    }
+
+    public void setCreatetime(Date createtime) {
+        this.createtime = createtime;
+    }
+
+    public Integer getFlag() {
+        return flag;
+    }
+
+    public void setFlag(Integer flag) {
+        this.flag = flag;
+    }
 
     public Integer getTotalPrice() {
         return totalPrice;

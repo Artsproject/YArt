@@ -1,106 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.qfedu.mapper.OrderItemMapper">
-  <resultMap id="BaseResultMap" type="com.qfedu.domain.OrderItem">
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="oid" jdbcType="INTEGER" property="oid" />
-    <result column="gid" jdbcType="INTEGER" property="gid" />
-    <result column="count" jdbcType="INTEGER" property="count" />
-    <result column="price" jdbcType="INTEGER" property="price" />
-    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+
+  <resultMap id="OrderItemVoRM" type="com.qfedu.common.vo.OrderItemVo">
+    <id property="orderItemId" column="order_item_id" jdbcType="INTEGER"/>
+    <result column="count" property="count" />
+    <result column="print_no" property="printNo"/>
+    <result column="frame_type" property="frameType" jdbcType="VARCHAR"/>
+    <result column="card_type" property="cardType" jdbcType="VARCHAR"/>
+    <result column="frame_price" property="framePrice" jdbcType="INTEGER"/>
+    <result column="trans_price" property="transPrice" jdbcType="INTEGER"/>
+
+    <result column="wid" jdbcType="INTEGER" property="wid" />
+    <result column="picurl" jdbcType="VARCHAR" property="picurl" />
+    <result column="name" jdbcType="VARCHAR" property="workName" />
+    <result column="price" jdbcType="INTEGER" property="workPrice" />
+    <result column="wide" jdbcType="INTEGER" property="wide" />
+    <result column="high" jdbcType="INTEGER" property="high" />
+    <result column="deep" jdbcType="INTEGER" property="deep" />
+
+    <result column="artist_id" jdbcType="INTEGER" property="artistId" />
+    <result column="artist_truename" jdbcType="VARCHAR" property="artistName" />
   </resultMap>
-  <sql id="Base_Column_List">
-    id, oid, gid, count, price, createtime
-  </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from t_orderitem
-    where id = #{id,jdbcType=INTEGER}
+
+  <insert id="insert" parameterType="com.qfedu.domain.OrderItem" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+    insert into t_orderitem (oid, gid, `count`, print_no,
+    frame_type, frame_price, card_type, trans_price)
+    values (#{oid,jdbcType=INTEGER}, #{gid,jdbcType=INTEGER},
+      #{count,jdbcType=INTEGER}, #{printNo}, #{frameType}, #{framePrice}, #{cardType}, #{transPrice}
+      )
+  </insert>
+
+  <select id="selectByOrderId" resultMap="OrderItemVoRM">
+    SELECT
+    oi.`id` order_item_id,
+    oi.`count` `count`,
+    oi.`card_type`,
+    oi.`frame_type`,
+    oi.`frame_price`,
+    oi.`trans_price`,
+    oi.`print_no`,
+    wi.`wid`,
+    wi.`name` workName,
+    wi.`picurl`,
+    wi.`price` workPrice,
+    wi.`wide`,
+    wi.`high`,
+    wi.`deep`,
+    a.`id` artistId,
+    a.`truename` artistName
+    FROM t_order o
+    LEFT JOIN t_orderitem oi ON o.id=oi.`oid`
+    LEFT JOIN t_workitem wi ON oi.`wid`=wi.`wid`
+    LEFT JOIN t_work w ON wi.`wid`=w.`id`
+    LEFT JOIN t_artist a ON w.`uid`=a.`uid`
+    WHERE o.uid = #{uid}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from t_orderitem
-    where id = #{id,jdbcType=INTEGER}
-  </delete>
-  <insert id="insert" parameterType="com.qfedu.domain.OrderItem">
-    insert into t_orderitem (id, oid, gid, 
-      count, price, createtime
-      )
-    values (#{id,jdbcType=INTEGER}, #{oid,jdbcType=INTEGER}, #{gid,jdbcType=INTEGER}, 
-      #{count,jdbcType=INTEGER}, #{price,jdbcType=INTEGER}, #{createtime,jdbcType=TIMESTAMP}
-      )
-  </insert>
-  <insert id="insertSelective" parameterType="com.qfedu.domain.OrderItem">
-    insert into t_orderitem
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
-      </if>
-      <if test="oid != null">
-        oid,
-      </if>
-      <if test="gid != null">
-        gid,
-      </if>
-      <if test="count != null">
-        count,
-      </if>
-      <if test="price != null">
-        price,
-      </if>
-      <if test="createtime != null">
-        createtime,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=INTEGER},
-      </if>
-      <if test="oid != null">
-        #{oid,jdbcType=INTEGER},
-      </if>
-      <if test="gid != null">
-        #{gid,jdbcType=INTEGER},
-      </if>
-      <if test="count != null">
-        #{count,jdbcType=INTEGER},
-      </if>
-      <if test="price != null">
-        #{price,jdbcType=INTEGER},
-      </if>
-      <if test="createtime != null">
-        #{createtime,jdbcType=TIMESTAMP},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.qfedu.domain.OrderItem">
-    update t_orderitem
-    <set>
-      <if test="oid != null">
-        oid = #{oid,jdbcType=INTEGER},
-      </if>
-      <if test="gid != null">
-        gid = #{gid,jdbcType=INTEGER},
-      </if>
-      <if test="count != null">
-        count = #{count,jdbcType=INTEGER},
-      </if>
-      <if test="price != null">
-        price = #{price,jdbcType=INTEGER},
-      </if>
-      <if test="createtime != null">
-        createtime = #{createtime,jdbcType=TIMESTAMP},
-      </if>
-    </set>
-    where id = #{id,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.qfedu.domain.OrderItem">
-    update t_orderitem
-    set oid = #{oid,jdbcType=INTEGER},
-      gid = #{gid,jdbcType=INTEGER},
-      count = #{count,jdbcType=INTEGER},
-      price = #{price,jdbcType=INTEGER},
-      createtime = #{createtime,jdbcType=TIMESTAMP}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
+
 </mapper>
