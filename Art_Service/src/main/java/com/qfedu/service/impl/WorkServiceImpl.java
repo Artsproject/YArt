@@ -3,7 +3,6 @@ package com.qfedu.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.qfedu.common.redis.JedisUtil;
 import com.qfedu.common.result.PageVo;
-import com.qfedu.common.result.R;
 import com.qfedu.common.util.EncrypUtil;
 import com.qfedu.common.vo.ArtistWorkvo;
 import com.qfedu.common.vo.Recommendvo;
@@ -15,6 +14,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
+
 @Service
 public class WorkServiceImpl implements WorkService {
 
@@ -33,7 +34,6 @@ public class WorkServiceImpl implements WorkService {
             String token = EncrypUtil.md5Pass(list.toString());
             System.out.println(token);
             util.addStr(token,JSON.toJSONString(list));
-            System.out.println("123");
         }
 
         return list;
